@@ -7,4 +7,5 @@ $('header').load(urlheader, function(){
         $('#bs_navbar').slideToggle();
     });
 });
+
 $('footer').load(urlfooter);

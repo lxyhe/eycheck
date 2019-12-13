@@ -29,11 +29,11 @@
 }
 
 /* footer */
-#footer {
+/* #footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+} */
 
 .contact_color,
 .records_color {
@@ -44,7 +44,7 @@
 .contact_color {
     overflow: hidden;
     background: #0D4C9A;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
 
 }
 
