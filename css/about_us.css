@@ -1,0 +1,229 @@
+.content_title img{
+    width:100%;
+    height: 288px;
+}
+.detail_view{
+    margin: 88px 252px 0 252px;
+}
+.detail_view > h1{
+    text-align: center;
+    color: #00021D;
+    font-size: 28px;
+}
+.detail_view p{
+    margin-top: 32px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.main_product > .title_view{
+    text-align: center;
+    margin-top: 120px;
+}
+.main_product > .title_view > h1{
+    color: #00021D;
+    font-size: 28px;
+}
+.main_product > .title_view >p{
+    font-size: 16px;
+    color: #666666;
+    margin-top: 24px;
+}
+.main_product > .content{
+    background-color: #f5f8fb;
+    padding: 64px 156px;
+    margin-top: 64px;
+    overflow: hidden;
+}
+.main_product > .content > .item{
+    width: 30%;
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #fff;
+    text-align: center;
+}
+.main_product > .content > .item img{
+    width: 100%;
+    margin: 0 auto;
+}
+.main_product > .content > .item h2{
+    font-size: 24px;
+    color: #00021D;
+    margin-top: 40px;
+}
+.main_product > .content > .item p{
+    font-size: 18px;
+    color: #666666;
+    margin: 24px 32px 40px;
+}
+.team{
+    padding: 120px 0;
+}
+.team > .title{
+    text-align: center;
+}
+.team > .title > h1{
+    color: #00021D;
+    font-size: 28px;
+}
+.team > .title > p{
+    font-size: 18px;
+    color: #666666;
+    margin: 24px 0 64px;
+}
+
+.team >.content{
+    background-color: #f5f8fb;
+    padding: 64px 156px;
+}
+.team >.content >.item{
+    overflow: hidden;
+}
+.team >.content >.item:nth-child(2), .team >.content >.item:nth-child(3), .team >.content >.item:nth-child(4){
+    margin-top: 89px;
+}
+.team >.content >.item >.left{
+    float: left;
+    /* overflow: hidden; */
+}
+.team >.content >.item >.left img{
+    width: 315px;
+    height: 420px;
+}
+
+.team >.content >.item >.right{
+    float: left;
+    width: 70%;
+    padding-left: 69px;
+}
+.team >.content >.item >.right h1{
+    font-size: 24px;
+    color: #00021D;
+}
+.team >.content >.item >.right h3{
+    font-size: 18px;
+    color: #00021D;
+    margin: 16px 0 48px;
+}
+.team >.content >.item >.right p{
+    font-size: 18px;
+    color: #666666;
+}
+
+@media screen and (max-width: 378px){
+    .content_title img{
+        width:100%;
+        height: 144px;
+    }
+    .detail_view{
+        margin: 44px 16px 0;
+    }
+    .detail_view > h1{
+        text-align: center;
+        color: #00021D;
+        font-size: 22px;
+    }
+    .detail_view p{
+        margin-top: 16px;
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .main_product > .title_view{
+        text-align: center;
+        margin-top: 48px;
+    }
+    .main_product > .title_view > h1{
+        color: #00021D;
+        font-size: 22px;
+    }
+    .main_product > .title_view >p{
+        font-size: 14px;
+        color: #666666;
+        margin-top: 16px;
+    }
+
+    .main_product > .content{
+        background-color: #f5f8fb;
+        padding: 40px 16px 43px 16px;
+        margin-top: 32px;
+        width: 100%;
+        overflow: scroll;
+    }
+    .main_product > .content > .item{
+        width: 100%;
+        float: left;
+        background-color: #fff;
+        text-align: center;
+    }
+    .main_product > .content > .item img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main_product > .content > .item h2{
+        font-size: 23px;
+        color: #00021D;
+        margin-top: 37px;
+    }
+    .main_product > .content > .item p{
+        font-size: 17px;
+        color: #666666;
+        margin: 22px 31px 0;
+    }
+
+    .team{
+        padding: 54px 0 48px;
+    }
+    .team > .title{
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .team > .title > h1{
+        color: #00021D;
+        font-size: 22px;
+    }
+    .team > .title > p{
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .team >.content{
+        background-color: #f5f8fb;
+        padding: 32px 16px;
+    }
+    .team >.content >.item{
+        overflow: hidden;
+    }
+    .team >.content >.item:nth-child(2), .team >.content >.item:nth-child(3), .team >.content >.item:nth-child(4){
+        margin-top: 48px;
+    }
+
+    .team >.content >.item >.left{
+        width: 100%;
+    }
+
+    .team >.content >.item >.left img{
+        width: 100%;
+    }
+    
+    .team >.content >.item >.right{
+        width: 100%;
+        padding-left: 0;
+    }
+    .team >.content >.item >.right h1{
+        font-size: 20px;
+        color: #00021D;
+        margin-top: 24px;
+    }
+    .team >.content >.item >.right h3{
+        font-size: 16px;
+        color: #00021D;
+        margin: 16px 0 32px;
+    }
+    .team >.content >.item >.right p{
+        font-size: 14px;
+        color: #666666;
+    }
+}
