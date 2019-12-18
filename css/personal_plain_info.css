@@ -1,0 +1,36 @@
+.content{
+    overflow: hidden;
+    border-bottom:1px solid transparent ;
+}
+.content>img{
+    width: 100%;
+    overflow: hidden;
+}
+.content>.text_view{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+.content>.text_view>span{
+    font-size: 28px;
+    color: #00021D;
+}
+.content>.text_view>p{
+    font-size: 18px;
+    color: #666666;
+}
+.content> .product{
+    margin-top: 88px;
+}
+.content> .scenario{
+    margin-top: 120px;
+}
+
+.content> .content_body_img{
+    width: 80%;
+    margin: 64px auto 24px;
+    overflow: hidden;
+}
+.content> .content_body_img >div{
+    overflow: hidden;
+}

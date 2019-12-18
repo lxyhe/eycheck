@@ -1,0 +1,119 @@
+.content_header{
+    padding: 29px 0 88px;
+}
+.content_header> .content_header_top{
+    width: 70%;
+    margin-left: 15%;
+    overflow: hidden;
+}
+.content_header> .content_header_top> .top_item{
+    float: left;
+    width: 168px;
+    margin-right: 88px;
+}
+.content_header> .content_header_top> .top_item span{
+    font-size: 15px;
+    color: #00021D;
+}
+.content_header> .content_header_top> .top_item span img{
+    width: 19px;
+    height: 19px;
+    margin-top: -4px;
+}
+.content_header> .content_header_top> .top_item p{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 21px;
+}
+.content_header>.content_header_bottom{
+    margin-top: 40px;
+    width: 100%;
+    height: 133px;
+}
+.content_header>.content_header_bottom>img{
+    width: 100%;
+    height: 100%;
+}
+
+.content_detail{
+    margin-bottom: 88px;
+}
+.content_detail>.content_detail_header{
+    text-align: center;
+    margin-right: 252px;
+    margin-left: 252px;
+}
+.content_detail>.content_detail_header h3{
+    font-size: 28px;
+    color: #00021D;
+    margin-bottom: 24px;
+}
+.content_detail>.content_detail_header span{
+    font-size: 18px;
+    color: #666666;
+}
+
+.content_detail>.content_detail_info{
+    margin-top: 64px;
+}
+.content_detail>.content_detail_info>.content_detail_info_top{
+    height: 492px;
+    overflow: hidden;
+}
+.content_detail>.content_detail_info>.content_detail_info_top >.left{
+    width: 50%;
+    height: 100%;
+    padding: 88px 24px 88px 156px;
+    background-color: #f5f7fb;
+    float: left;
+}
+.content_detail>.content_detail_info>.content_detail_info_top >.left>div{
+    font-size: 24px;
+    color: #00021D;
+}
+.content_detail>.content_detail_info>.content_detail_info_top >.left>div img{
+    width: 24px;
+    height: 25px;
+}
+.content_detail>.content_detail_info>.content_detail_info_top >.left>p{
+    font-size: 18px;
+    color: #666666;
+    margin-top: 49px;
+    margin-bottom: 48px;
+}
+.content_detail>.content_detail_info>.content_detail_info_top >.right{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    float: left;
+}
+
+.content_detail_info_middle{
+    height: 492px;
+    overflow: hidden;
+}
+.content_detail_info_middle>.left{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    float: left;
+}
+.content_detail_info_middle>.right{
+    float: left;
+    width: 50%;
+    padding: 88px 156px 88px 24px;
+}
+.content_detail_info_middle>.right>div{
+    font-size: 24px;
+    color: #00021D;
+}
+.content_detail_info_middle>.right>div img{
+    width: 24px;
+    height: 25px;
+}
+.content_detail_info_middle>.right>p{
+    font-size: 18px;
+    color: #666666;
+    margin-top: 49px;
+    margin-bottom: 48px;
+}
