@@ -53,67 +53,56 @@
     color: #666666;
 }
 
-.content_detail>.content_detail_info{
-    margin-top: 64px;
-}
-.content_detail>.content_detail_info>.content_detail_info_top{
-    height: 492px;
+.content_middle{
+    width: 100%;
+    max-width: 1440px;
+    margin: 64px auto;
     overflow: hidden;
 }
-.content_detail>.content_detail_info>.content_detail_info_top >.left{
-    width: 50%;
-    height: 100%;
-    padding: 88px 24px 88px 156px;
+.imagetext_img img{
+    width: 100%;
+    height: 492px;
+}
+.imagetext_box {
+    height: 492px;
+    width: 50%;   
+    padding:0!important;
+}
+.imagetext_subbox p{
+    margin-top: 88px;
+}
+.imagetext_subbox p span{
+    font-size: 24px;
+    color: #00021D;
+}
+.imagetext_section{
+    font-size: 18px;
+    color: #666666;
+    margin-top: 49px;
+    margin-bottom: 48px;
+}
+.imagetext_section+div {
+    width: 156px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid rgba(13, 76, 154, 1);
+    text-align: center;
+    color: rgba(13, 76, 154, 1);
+    font-size: 16px;
+}
+.imagetext_section+div>span:first-child:after {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 10px;
+    display: inline-block;
+    border-top: 1px solid rgba(13, 76, 154, 1);
+    border-right: 1px solid rgba(13, 76, 154, 1);
+    transform: rotate(45deg);
+}
+.imagetext_box_gray{
     background-color: #f5f7fb;
-    float: left;
 }
-.content_detail>.content_detail_info>.content_detail_info_top >.left>div{
-    font-size: 24px;
-    color: #00021D;
-}
-.content_detail>.content_detail_info>.content_detail_info_top >.left>div img{
-    width: 24px;
-    height: 25px;
-}
-.content_detail>.content_detail_info>.content_detail_info_top >.left>p{
-    font-size: 18px;
-    color: #666666;
-    margin-top: 49px;
-    margin-bottom: 48px;
-}
-.content_detail>.content_detail_info>.content_detail_info_top >.right{
-    width: 50%;
-    height: 100%;
-    background-color: pink;
-    float: left;
-}
-
-.content_detail_info_middle{
-    height: 492px;
-    overflow: hidden;
-}
-.content_detail_info_middle>.left{
-    width: 50%;
-    height: 100%;
-    background-color: pink;
-    float: left;
-}
-.content_detail_info_middle>.right{
-    float: left;
-    width: 50%;
-    padding: 88px 156px 88px 24px;
-}
-.content_detail_info_middle>.right>div{
-    font-size: 24px;
-    color: #00021D;
-}
-.content_detail_info_middle>.right>div img{
-    width: 24px;
-    height: 25px;
-}
-.content_detail_info_middle>.right>p{
-    font-size: 18px;
-    color: #666666;
-    margin-top: 49px;
-    margin-bottom: 48px;
+.imagetext_img{
+    padding:0!important;
 }
