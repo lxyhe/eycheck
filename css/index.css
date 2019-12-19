@@ -2,3 +2,6 @@
     min-height: 400px;
     /* margin-bottom: 267px; */
 }
+#body{
+    min-width: 1440px;
+}
