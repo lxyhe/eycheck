@@ -22,13 +22,8 @@
     margin-bottom: 186px;
 }
 
-
-
 .imagetext_subbox>p {
-    /* margin-top:  */
     margin: 122px 0 48px;
-
-
 }
 
 .imagetext_subbox>p>span {
@@ -63,23 +58,25 @@
     border-right: 1px solid rgba(13, 76, 154, 1);
     transform: rotate(45deg);
 }
-.imagetext_img img{
+
+.imagetext_img img {
     width: 100%;
     height: 492px;
-   
+
 }
 
 .imagetext_box {
     height: 492px;
-    width: 732px;   
-    padding:0!important;
+    width: 732px;
+    padding: 0 !important;
 }
 
-.imagetext_img{
+.imagetext_img {
     width: 708px;
-    padding:0!important;
+    padding: 0 !important;
 }
-.imagetext_box_gray{
+
+.imagetext_box_gray {
     background: rgba(13, 76, 154, 0.04);
-    
+
 }
