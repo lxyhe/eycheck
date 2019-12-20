@@ -76,6 +76,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="swiper_title">
+                <p>多种解决方案</p>
+                <span>针对不同场景、不同业务范围具有多种行业成熟领先的解决方案</span>
+            </div>
+            <div class="middle_swiper">
+                <ul class="xSwiper">
+                    <li id="1" class="xSwiper_slide xSwiper_slide_pre">
+                        <img src="./imgs/home/Rectangle Copy 13@1x.png" alt="">
+                    </li>
+                    <li id="2" class="xSwiper_slide xSwiper_slide_active"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></li>
+                    <li id="3" class="xSwiper_slide xSwiper_slide_next"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></li>
+                </ul>
+                <img class="preBtn" src="./imgs/home/Group 4.png" alt="">
+                <img class="nextBtn" src="./imgs/home/Group 4.png" alt="">
+            </div>
             <div class="bottom_map">
                 <div class="title">
                     <p>市场覆盖</p>
@@ -107,6 +122,52 @@
                 clickable:true,
                 }
             }) 
+
+            $(".preBtn").click(function(){
+                console.log('pre');
+                let isFirst = !($('#1').hasClass('active') || $('#1').hasClass('pre') || $('#1').hasClass('next'));
+                if(isFirst){
+                    $('.xSwiper_slide_active').addClass('pre');
+                    $('.xSwiper_slide_pre').addClass('next');
+                    $(".xSwiper_slide_next").addClass('active');
+                }else{
+                    if($('#1').hasClass('active')){
+                        $('#1').addClass('pre').removeClass('active');
+                        $('#2').addClass('active').removeClass('next');
+                        $('#3').addClass('next').removeClass('pre');
+                    }else if($('#1').hasClass('pre')){
+                        $('#1').addClass('next').removeClass('pre');
+                        $('#2').addClass('pre').removeClass('active');
+                        $('#3').addClass('active').removeClass('next');
+                    }else if($('#1').hasClass('next')){
+                        $('#1').addClass('active').removeClass('next');
+                        $('#2').addClass('next').removeClass('pre');
+                        $('#3').addClass('pre').removeClass('active');
+                    }
+                }
+            })
+            $(".nextBtn").click(function(){
+                let isFirst = !($('#1').hasClass('active') || $('#1').hasClass('pre') || $('#1').hasClass('next'));
+                if(isFirst){
+                    $('.xSwiper_slide_active').addClass('next');
+                    $('.xSwiper_slide_pre').addClass('active');
+                    $(".xSwiper_slide_next").addClass('pre');
+                }else{
+                    if($('#1').hasClass('active')){
+                        $('#1').addClass('next').removeClass('active');
+                        $('#2').addClass('pre').removeClass('next');
+                        $('#3').addClass('active').removeClass('pre');
+                    }else if($('#1').hasClass('pre')){
+                        $('#1').addClass('active').removeClass('pre');
+                        $('#2').addClass('next').removeClass('active');
+                        $('#3').addClass('pre').removeClass('next');
+                    }else if($('#1').hasClass('next')){
+                        $('#1').addClass('pre').removeClass('next');
+                        $('#2').addClass('active').removeClass('pre');
+                        $('#3').addClass('next').removeClass('active');
+                    }
+                }
+            })
         })
     </script>
 </body>

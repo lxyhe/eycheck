@@ -28,21 +28,21 @@
         </div>
         <div class="content">
             <div class="content_header_top">
-                    <div class="top_item">
+                    <div class="top_item personal-idea">
                         <span>
                             <img src="./imgs/production/个人方案.png">
                             <span>个人方案</span>
                         </span>
                         <p>解决个人商户在用户核验等的问题</p>
                     </div>
-                    <div class="top_item">
+                    <div class="top_item commpany-idea">
                         <span>
                             <img src="./imgs/production/企业方案.png">
                             <span>企业方案</span>
                         </span>
                         <p>解决个人商户在用户核验等的问题</p>
                     </div>
-                    <div class="top_item">
+                    <div class="top_item gover-idea">
                         <span>
                             <img src="./imgs/production/政府合作.png">
                             <span>政府合作</span>
@@ -151,13 +151,13 @@
         $(function(){
             let btnIsShow = false;
             let viewIsShow = false;
-            $(".person_pro").on("click", function(){
+            $(".personal-idea").on("click", function(){
                 location.href = "./personal_plain_info.html";
             })
-            $(".company_pro").on("click", function(){
+            $(".commpany-idea").on("click", function(){
                 location.href = "./company_plain_info.html"
             })
-            $(".government_pro").on("click", function(){
+            $(".gover-idea").on("click", function(){
                 location.href = "./gover_coop.html"
             })
             $("#product_btn").hover(function(event){

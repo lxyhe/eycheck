@@ -12,6 +12,7 @@
     float: left;
     width: 168px;
     margin-right: 88px;
+    cursor: pointer;
 }
 .content_header_top> .top_item span{
     font-size: 15px;

@@ -1,36 +1,43 @@
 .content{
-    overflow: hidden;
-    border-bottom:1px solid transparent ;
+    min-width: 1440px;
+    margin: 0 auto;
 }
 .content>img{
     width: 100%;
+}
+.info-content{
+    width: 1440px;
+    margin: 0 auto 64px;
     overflow: hidden;
 }
-.content>.text_view{
+.text_view{
     width: 70%;
     margin-left: 15%;
     text-align: center;
 }
-.content>.text_view>span{
+.text_view>span{
     font-size: 28px;
     color: #00021D;
 }
-.content>.text_view>p{
+.text_view>p{
     font-size: 18px;
     color: #666666;
+    margin-top: 24px;
 }
-.content> .product{
+.product{
     margin-top: 88px;
 }
-.content> .scenario{
+.scenario{
     margin-top: 120px;
 }
-
-.content> .content_body_img{
+.content_body_img{
     width: 80%;
     margin: 64px auto 24px;
     overflow: hidden;
 }
-.content> .content_body_img >div{
+.content_body_img >div{
     overflow: hidden;
+}
+.bottom_images{
+    margin-top: 24px;
 }

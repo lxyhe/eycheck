@@ -1,3 +1,11 @@
+.content{
+    min-width: 1440px;
+}
+.content_title{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 .content_title img{
     width: 100%;
 }
@@ -20,7 +28,7 @@
     font-size: 18px;
     color: #666666;
 }
-.content_view{
+.col_view{
     overflow: hidden;
 }
 .content_view>.col_view >div{
