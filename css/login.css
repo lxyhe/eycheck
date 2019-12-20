@@ -65,7 +65,8 @@
     float: right;
     cursor: pointer;
 }
-.login_footer p{
+
+.login_footer p {
     width: 60%;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.8);
@@ -73,7 +74,19 @@
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translate(-50%,5%);
-
+    transform: translate(-50%, 5%);
     text-align: center;
+}
+
+.login_back {
+    position: relative;
+    top: 24px;
+    left: 36px;
+
+    cursor: pointer;
+}
+
+.login_back a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
 }
