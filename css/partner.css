@@ -1,6 +1,10 @@
 
+#body{
+    min-width: 1440px;
+}
 .content_title{
     width: 100%;
+    min-width: 1440px;
 }
 .content_title img{
     width:100%;
@@ -37,14 +41,6 @@
 .partner>.content>li:last-child{
     margin-bottom: 0;
 }
-.swiper-container{
-    width: 70% !important;
-}
-.swiper-slide{
-    background-color: #999999;
-    width: 100% !important;
-    padding: 0 200px;
-}
 
 .title-form{
     text-align: center;
@@ -70,11 +66,195 @@
 .control-label{
     font-size: 16px;
 }
+.pc-view{
+    display: block;
+}
+.phone-view{
+    display: none;
+}
 
+@media screen and (max-width: 640px){
+    #body{
+        min-width: 320px;
+        max-width: 640px;
+    }
+    .content_title{
+        width: 100%;
+        min-width: 320px;
+        max-width: 640px;
+    }
+    .content{
+        width: 100%;
+        margin: 0 auto;
+    }
 
-@media screen and (max-width: 378px){
+    .partner{
+        width: 100%;
+        margin: 44px auto 0;
+        text-align: center;
+    }
+    .partner h2{
+        font-size: 22px;
+        color: #00021D;
+    }
+    .partner p{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        font-size: 14px;
+        color: #666666;
+    }
+    .partner > .content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+        min-height: 0px;
+    }
+    .item{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .item>img{
+        width: 104px;
+        margin-bottom: 17px;
+    }
+    .partner>.content>li{
+        margin-bottom: 0;
+    }
+
+    .title-form{
+        text-align: center;
+        margin: 48px 0 34px; 
+        padding: 0 32px;
+    }
+    .title-form h1{
+        font-size: 22px;
+        color: #00021D;
+        margin-bottom: 16px;
+    }
+    .title-form span{
+        font-size: 14px;
+        color: #666666;
+    }
+
     .cur-form{
-        margin: 34px 0 48px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 48px;
+        padding: 0 16px;
+    }
+    .form-control{
+        height: 38px;
+    }
+    .control-label{
+        font-size: 14px;
+        line-height: 38px;
+        padding: 0;
+    }
+    .company-view{
+        padding: 0;
+        padding-right: 16px;
+    }
+    .company-view1{
+        padding: 0;
+    }
+    .pc-view{
+        display: none;
+    }
+    .phone-view{
+        display: block;
+    }
+
+    .sms-title{
+        float: left;
+    }
+    .sms-input{
+        float: left;
+    }
+    .sms-btn{
+        float: left;
+    }
+    .xSwiper{
+        width: 100%;
+        margin-top: 39px;
+        padding: 0 16px 43px;
+        background-color: rgba(13,76,154,1);
+        overflow: hidden;
+    }
+    .xSwiper >.top{
+        text-align: center;
+        overflow: hidden;
+    }
+    .xSwiper >.top h1{
+        margin-top: 32px;
+        font-size: 22px;
+        color: #ffffff;
+    }
+    .xSwiper >.top span{
+        display: block;
+        font-size: 14px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    .swiper-container{
+        width: 100%;
+        margin-top: 32px;
+        border-radius: 10px;
+    }
+    .swiper-slide{
+        width: 100%;
+        padding: 24px 24px;
+        background-color: #fff;
+    }
+    .swiper-slide p{
+        font-size: 12px;
+        color: #00021D;
+    }
+    .swiper-slide >.bottom{
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .swiper-slide >.bottom .icon{
+        background-color: #999999;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .swiper-slide >.bottom .info{
+        float: left;
+        margin-left: 13px;
+    }
+    .swiper-slide >.bottom .info p{
+        font-size: 13px;
+        color: #00021D;
+        font-weight:500;
+    }
+    .swiper-slide >.bottom .info span{
+        font-size: 10px;
+        color: #666666;
+        margin-right: 5px;
+    }
+
+    .swiper-pagination{
+        width: 100%;
+        margin-top: 4px;
+    }
+    .swiper-pagination-bullet{
+        background-color: #fff;
+        opacity: 0.29;
+        width: 20px;
+        height: 2px;
+        margin-right: 12px;
+        border-radius: 1px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+        opacity: 1;
+    }
+    .swiper-pagination{
         text-align: center;
     }
 }

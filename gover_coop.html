@@ -27,7 +27,8 @@
         </div>
         <div class="content">
             <div class="content_title">
-                <img src="./imgs/production/政府合作banner.png" alt="">
+                <img class="pc-class" src="./imgs/production/政府合作banner.png" alt="">
+                <img class="phone-class" src="./imgs/production/Group 4@2x.png" alt="">
             </div>
             <div class="content_view">
                 <p>权威机构认证</p>
@@ -36,24 +37,24 @@
                     个政府合作的一些文案内容
                 </p>
                 <div class="col_view">
-                    <div class="col-md-3 police">
+                    <div class="col-md-3 col-xs-3 police">
                         <img src="./imgs/production/公安认证.png" alt="">
                         <p>公安认证</p>
                     </div>
-                    <div class="col-md-3 gover">
+                    <div class="col-md-3 col-xs-3 gover">
                         <img src="./imgs/production/政府接口.png" alt="">
                         <p>政府接口</p>
                     </div>
-                    <div class="col-md-3 authority">
+                    <div class="col-md-3 col-xs-3 authority">
                         <img src="./imgs/production/权威授权.png" alt="">
                         <p>权威授权</p>
                     </div>
-                    <div class="col-md-3 publicSecurity">
+                    <div class="col-md-3 col-xs-3 publicSecurity">
                         <img src="./imgs/production/治安备案.png" alt="">
                         <p>治安备案</p>
                     </div>
                     <div class="alert_view">
-                        <p style="font-size: 16px;">人人核验获得了公安部有关部门授予从事身份核验相关服务业务，
+                        <p>人人核验获得了公安部有关部门授予从事身份核验相关服务业务，
                             可使用公安部提供的数据库，只能治安综合管理平台，互联网+
                             可信身份认证平台进行身份核验和相关增值服务。用户进行身份
                             核验的时候会将用户的信息上传治安备案处理。
@@ -77,10 +78,19 @@
 
     <script>
         $(function(){
-            let windowW = $(window).width();
-            let singleW = 936 / 4;
+            let singleW = 100;
 
             $(".police").hover(function (event){
+                let windowW = $(window).width();
+                if (windowW < 640){
+                    singleW = windowW / 4;
+                }
+                else{
+                    singleW = 936 / 4;
+                }
+                console.log(windowW);
+                console.log(singleW);
+
                 if(event.type == "mouseenter"){
                 let X = singleW / 2 - 5;
                 $(".triangle").css("left", X)
@@ -90,6 +100,13 @@
                 }
             })
             $(".gover").hover(function (event){
+                let windowW = $(window).width();
+                if (windowW < 640){
+                    singleW = windowW / 4;
+                }else{
+                    singleW = 936 / 4;
+                }
+
                 if(event.type == "mouseenter"){
                     let X = (singleW * 3)/2 -5;
                     $(".triangle").css("left", X)
@@ -99,6 +116,13 @@
                 }
             })
             $(".authority").hover(function(event){
+                let windowW = $(window).width();
+                if (windowW < 640){
+                    singleW = windowW / 4;
+                }else{
+                    singleW = 936 / 4;
+                }
+
                 if(event.type == "mouseenter"){
                     let X = (singleW * 5)/2 -5;
                     $(".triangle").css("left", X)
@@ -108,6 +132,13 @@
                 }
             })
             $(".publicSecurity").hover(function(event){
+                let windowW = $(window).width();
+                if (windowW < 640){
+                    singleW = windowW / 4;
+                }else{
+                    singleW = 936 / 4;
+                }
+
                 if(event.type == "mouseenter"){
                     let X = (singleW * 7)/2 -5;
                     $(".triangle").css("left", X)

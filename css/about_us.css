@@ -117,5 +117,148 @@
     color: #666666;
     margin-top: 48px;
 }
+.phone-view{
+    display: none;
+}
+.pc-view{
+    display: block;
+}
 
+@media screen and (max-width: 640px){
+    .detail_view{
+        padding: 44px 16px 0;
+        background-color: #fff;
+    }
+    .detail_view > h1{
+        text-align: center;
+        color: #00021D;
+        font-size: 22px;
+    }
+    .detail_view p{
+        margin-top: 16px;
+        font-size: 14px;
+        color: #666666;
+    }
+    .title_view{
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        background-color: #fff;
+    }
+    .title_view > h1{
+        color: #00021D;
+        font-size: 22px;
+    }
+    .title_view >p{
+        font-size: 14px;
+        color: #666666;
+        margin-top: 16px;
+    }
+    .main_product{
+        width: 100%;
+        max-width: 640px;
+        min-width: 320px;
+        margin: 0 auto;
+        background-color: #f5f8fb;
+    }
+    .team_title{
+        text-align: center;
+        background-color: #fff;
+        padding: 54px 32px 32px;
+    }
+    .team{
+        width: 100%;
+        max-width: 640px;
+        min-width: 320px;
+        margin: 0 auto;
+    }
+    .team_title > h1{
+        color: #00021D;
+        font-size: 22px;
+    }
+    .team_title > p{
+        font-size: 14px;
+        color: #666666;
+        margin-top: 16px;
+    }
+
+    .info_view{
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 0;
+    }
+    .info_view >li{
+        overflow: hidden;
+        margin-bottom: 48px;
+    }
+    .info_view >li:last-child{
+        margin-bottom: 0;
+    }
+    .info_view >li >div:first-child img{
+        width: 100%;
+        max-width: 640px;
+    }
+    .info_view >li >div:last-child > p:nth-child(1){
+        margin-top: 24px;
+        font-size: 20px;
+        color: #00021D;
+    }
+    .info_view >li >div:last-child > p:nth-child(2){
+        font-size: 16px;
+        color: #00021D;
+        margin-top: 16px;
+    }
+    .info_view >li >div:last-child > p:nth-child(3){
+        font-size: 14px;
+        color: #666666;
+        margin-top: 32px;
+    }
+    .phone-view{
+        display: block;
+    }
+    .pc-view{
+        display: none;
+    }
+    .middle-scroll{
+        padding: 40px 16px 43px;
+    }
+    .swiper-slide{
+        background-color: #fff;
+        height: 437px;
+    }
+    .swiper-slide > .bottom{
+        text-align: center;
+        padding: 0 30px;
+    }
+    .swiper-slide > .bottom > h2{
+        font-size: 23px;
+        margin-top: 37px;
+    }
+    .swiper-slide > .bottom > p{
+        font-size: 17px;
+        margin-top: 22px;
+    }
+
+    .swiper-pagination{
+        width: 100%;
+        margin-top: 4px;
+    }
+    .swiper-pagination-bullet{
+        background-color: rgba(13,76,154,1);
+        opacity: 0.49;
+        width: 20px;
+        height: 2px;
+        margin-right: 12px;
+        border-radius: 1px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: rgba(13,76,154,1) !important;
+        opacity: 1;
+    }
+    .swiper-pagination{
+        text-align: center;
+    }
+}
 

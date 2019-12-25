@@ -35,9 +35,17 @@
 .content_header_bottom>img{
     width: 100%;
 }
+.pc_banner{
+    display: block;
+}
+.phone_banner{
+    display: none;
+}
 
 .content_detail{
     margin-bottom: 88px;
+    width: 100%;
+    min-width: 1440px;
 }
 .content_detail>.content_detail_header{
     text-align: center;
@@ -54,6 +62,12 @@
     color: #666666;
 }
 
+.pc_middle{
+    display: block;
+}
+.phone_middle{
+    display: none;
+}
 .content_middle{
     width: 100%;
     max-width: 1440px;
@@ -61,7 +75,7 @@
     overflow: hidden;
 }
 .imagetext_img img{
-    width: 100%;
+    width: 708px;
     height: 492px;
 }
 .imagetext_box {
@@ -106,4 +120,84 @@
 }
 .imagetext_img{
     padding:0!important;
+}
+
+@media screen and (max-width: 640px){
+    .pc_banner{
+        display: none;
+    }
+    .phone_banner{
+        display: block;
+    }
+    .content_header_bottom{
+        margin-bottom: 44px;
+    }
+    .content_detail{
+        margin-bottom: 48px;
+        width: 100%;
+        min-width: 320px;
+        max-width: 640px;
+    }
+    .content_detail>.content_detail_header{
+        text-align: center;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .content_detail>.content_detail_header h3{
+        font-size: 22px;
+        color: #00021D;
+        margin-bottom: 16px;
+    }
+    .content_detail>.content_detail_header span{
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .pc_middle{
+        display: none;
+    }
+    .phone_middle{
+        display: block;
+    }
+    .phone_middle{
+        width: 100%;
+        max-width: 640px;
+        margin: 32px auto 48px;
+        overflow: hidden;
+    }
+    .single_view{
+        overflow: hidden;
+    }
+    .single_view > img{
+        width: 100%;
+    }
+    .single_view > .top{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    .single_view > .top > img{
+        width: 20px;
+        height: 21px;
+        vertical-align: top;
+        margin-left: 16px;
+    }
+    .single_view > .top > span{
+        font-size: 15px;
+        color: #00021D;
+    }
+    .single_view > .imagetext_section{
+        margin: 0 16px;
+        color: #666666;
+        font-size: 12px;
+    }
+    .single_view > .bottom{
+        width: 96px;
+        height: 26px;
+        line-height: 26px;
+        border: 1px solid #0D4C9A;
+        text-align: center;
+        color: #0D4C9A;
+        font-size: 10px;
+        margin: 31px auto;
+    }
 }

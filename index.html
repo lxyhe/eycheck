@@ -28,9 +28,18 @@
         <div class="content">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./imgs/home/首页banner.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/home/首页banner.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./imgs/home/首页banner.png" alt=""></div>
+                    <div class="swiper-slide">
+                        <img class="pc-view" src="./imgs/home/首页banner.png" alt="">
+                        <img class="phone-view" src="./imgs/home/Group 2@2x.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="pc-view" src="./imgs/home/首页banner.png" alt="">
+                        <img class="phone-view" src="./imgs/home/Group 2@2x.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="pc-view" src="./imgs/home/首页banner.png" alt="">
+                        <img class="phone-view" src="./imgs/home/Group 2@2x.png" alt="">
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -41,7 +50,7 @@
                 </div>
                 <ul class="icon_list">
                     <li>
-                        <div class="col-md-4 single_item">
+                        <div class="col-md-4 single_item first_item">
                             <img src="./imgs/home/资质.png" alt="">
                             <p>资质</p>
                             <span>权威的核验资质</span>
@@ -91,6 +100,17 @@
                 <img class="preBtn" src="./imgs/home/Group 4.png" alt="">
                 <img class="nextBtn" src="./imgs/home/Group 4.png" alt="">
             </div>
+            <div class="middle-scroll">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                    </div>
+                    <img class="mid_preBtn swiper-button-prev" src="./imgs/home/Group 4@2x.png" alt="">
+                    <img class="mid_nextBtn swiper-button-next" src="./imgs/home/Group 4@2x.png" alt="">
+                </div>
+            </div>
             <div class="bottom_map">
                 <div class="title">
                     <p>市场覆盖</p>
@@ -122,6 +142,16 @@
                 clickable:true,
                 }
             }) 
+            var mySwiper1 = new Swiper ('.swiper-container1', {
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                direction: 'horizontal',
+                loop: true, // 循环模式选项
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            })
 
             $(".preBtn").click(function(){
                 console.log('pre');

@@ -27,7 +27,8 @@
         </div>
         <div class="content">
             <div class="content_title">
-                <img src="./imgs/about_banner.png" alt="">
+                <img class="pc-view" src="./imgs/about_banner.png" alt="">
+                <img class="phone-view" src="./imgs/production/Group 4@2x.png" alt="">
             </div>
             <div class="detail_view">
                 <h1>公司简介</h1>
@@ -38,7 +39,7 @@
                 <h1>主要产品</h1>
                 <p>具有强大研发能力和业务能力的核心团队是人人核验的发展基石</p>
             </div>
-            <div class="main_product">
+            <div class="main_product pc-view">
                 <div class="product_content">
                     <div class="item col-md-4">
                         <img src="./imgs/about_us/Rectangle Copy 11@1x.png" alt="">
@@ -62,6 +63,34 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="phone-view middle-scroll">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./imgs/about_us/Rectangle Copy 11@1x.png" alt="">
+                            <div class="bottom">
+                                <h2>人人核验</h2>
+                                <p>这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about_us/Rectangle Copy 11@1x.png" alt="">
+                            <div class="bottom">
+                                <h2>金桥智控</h2>
+                                <p>这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/about_us/Rectangle Copy 11@1x.png" alt="">
+                            <div class="bottom">
+                                <h2>金桥之眼</h2>
+                                <p>这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案这是关于这个项目的介绍文案</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="team_title">
                 <h1>核心团队</h1>
@@ -165,7 +194,19 @@
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/other.js"></script>
 
-
+    <script>
+        $(function(){
+            var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal',
+                loop: true, // 循环模式选项
+                
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true
+                }
+            }) 
+        })
+    </script>
 </body>
 
 </html>
