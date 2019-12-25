@@ -11,14 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>产品方案</title>
-    <link rel="stylesheet" type="text/css"  href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css">
-    <link rel="stylesheet" type="text/css"  href="https://unpkg.com/swiper/css/swiper.min.css">  
-    <link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"  href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css"  href="./css/other.css">
-    <link rel="stylesheet" type="text/css"  href="./css/common.css">
-    <link rel="stylesheet" type="text/css"  href="./css/index.css">
-    <link rel="stylesheet" type="text/css"  href="./css/production.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/other.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/production.css">
 </head>
 
 <body>
@@ -28,28 +28,28 @@
         </div>
         <div class="content">
             <div class="content_header_top">
-                    <div class="top_item personal-idea">
-                        <span>
-                            <img src="./imgs/production/个人方案.png">
-                            <span>个人方案</span>
-                        </span>
-                        <p>解决个人商户在用户核验等的问题</p>
-                    </div>
-                    <div class="top_item commpany-idea">
-                        <span>
-                            <img src="./imgs/production/企业方案.png">
-                            <span>企业方案</span>
-                        </span>
-                        <p>解决个人商户在用户核验等的问题</p>
-                    </div>
-                    <div class="top_item gover-idea">
-                        <span>
-                            <img src="./imgs/production/政府合作.png">
-                            <span>政府合作</span>
-                        </span>
-                        <p>解决个人商户在用户核验等的问题</p>
-                    </div>
+                <div class="top_item personal-idea">
+                    <span>
+                        <img src="./imgs/production/个人方案.png">
+                        <span>个人方案</span>
+                    </span>
+                    <p>解决个人商户在用户核验等的问题</p>
                 </div>
+                <div class="top_item commpany-idea">
+                    <span>
+                        <img src="./imgs/production/企业方案.png">
+                        <span>企业方案</span>
+                    </span>
+                    <p>解决个人商户在用户核验等的问题</p>
+                </div>
+                <div class="top_item gover-idea">
+                    <span>
+                        <img src="./imgs/production/政府合作.png">
+                        <span>政府合作</span>
+                    </span>
+                    <p>解决个人商户在用户核验等的问题</p>
+                </div>
+            </div>
             <div class="content_header_bottom">
                 <img src="./imgs/production/Rectangle@1x.png">
             </div>
@@ -148,52 +148,51 @@
     <script type="text/javascript" src="./js/other.js"></script>
 
     <script>
-        $(function(){
+        $(function () {
             let btnIsShow = false;
             let viewIsShow = false;
-            $(".personal-idea").on("click", function(){
+            $(".personal-idea").on("click", function () {
                 location.href = "./personal_plain_info.html";
             })
-            $(".commpany-idea").on("click", function(){
+            $(".commpany-idea").on("click", function () {
                 location.href = "./company_plain_info.html"
             })
-            $(".gover-idea").on("click", function(){
+            $(".gover-idea").on("click", function () {
                 location.href = "./gover_coop.html"
             })
-            $("#product_btn").hover(function(event){
-                if(event.type == 'mouseenter'){
-                    $(".content_header_top").slideDown(function(){
+            $("#product_btn").hover(function (event) {
+                if (event.type == 'mouseenter') {
+                    $(".content_header_top").slideDown(function () {
                         btnIsShow = true;
                         viewIsShow = false;
                     });
-                }else if(event.type == 'mouseleave'){
+                } else if (event.type == 'mouseleave') {
                     setTimeout(() => {
-                        if(viewIsShow) return;
+                        if (viewIsShow) return;
                         console.log('btn: mouseleave');
-                        $(".content_header_top").slideUp(function(){
+                        $(".content_header_top").slideUp(function () {
                             btnIsShow = false;
                         });
                     }, 0);
                 }
             })
-            $(".content_header_top").hover(function(event){
-                if(event.type == 'mouseenter'){
-                    $(".content_header_top").slideDown(function(){
+            $(".content_header_top").hover(function (event) {
+                if (event.type == 'mouseenter') {
+                    $(".content_header_top").slideDown(function () {
                         viewIsShow = true;
                         btnIsShow = false;
                     });
-                }else if(event.type == 'mouseleave'){
+                } else if (event.type == 'mouseleave') {
                     setTimeout(() => {
-                        if(btnIsShow) return;
+                        if (btnIsShow) return;
                         console.log('header_top: mouseleave');
-                        $(".content_header_top").slideUp(function(){
+                        $(".content_header_top").slideUp(function () {
                             viewIsShow = false;
                         });
                     }, 0);
                 }
             })
         })
-        
     </script>
 </body>
 

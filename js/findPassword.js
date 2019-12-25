@@ -31,6 +31,7 @@ var app = new Vue({
             this.isShow = !this.isShow;
         },
         goLogin() {
+            console.log("login")
             window.location.href = "../html/login.html"
         }
     }

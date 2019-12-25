@@ -1,3 +1,38 @@
+.content_header_top {
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 29px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    height: 155px;
+}
+
+.content_header_top>.top_item {
+    float: left;
+    width: 168px;
+    margin-right: 88px;
+    cursor: pointer;
+}
+
+.content_header_top>.top_item span {
+    font-size: 15px;
+    color: #00021D;
+}
+
+.content_header_top>.top_item span img {
+    width: 19px;
+    height: 19px;
+    margin-top: -4px;
+}
+
+.content_header_top>.top_item p {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 21px;
+}
+
 .content_body_title {
     width: 936px;
     text-align: center;
@@ -79,4 +114,79 @@
 .imagetext_box_gray {
     background: rgba(13, 76, 154, 0.04);
 
+}
+
+/* 网约解决方案 */
+.contact {
+    width: 168px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid rgba(13, 76, 154, 1);
+    background: #fff;
+    text-align: center;
+    color: rgba(13, 76, 154, 1);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.contact:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(13, 76, 154, 1);
+}
+
+/* 跨级电商解决方案*/
+.image_text {
+    width: 1440px;
+    height: 335px;
+    margin: 0 auto;
+}
+
+.image_text span:first-child {
+    display: inline-block;
+    width: 727px;
+    height: 335px;
+}
+
+.image_text span:last-child {
+    display: inline-block;
+    width: 708px;
+    height: 335px;
+}
+
+.cross {
+    width: 1440px !important;
+    margin-left: 0% !important;
+}
+
+.img_text {
+    display: inline-block;
+    width: 727px;
+    height: 335px;
+    /* border: 1px solid #ddd; */
+    background: rgba(13, 76, 154, 0.04);
+}
+
+.image {
+    display: inline-block;
+    width: 708px;
+    height: 335px;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+}
+
+.img_text p:first-child {
+    font-size: 24px;
+    color: rgba(0, 2, 29, 1);
+    margin-top: 101px;
+    margin-bottom: 48px;
+    margin-left: 156px;
+    text-align: left;
+}
+
+.img_text p:last-child {
+    font-size: 16px;
+    color: rgba(102, 102, 102, 1);
+    margin-left: 156px;
+    text-align: left;
+   
 }
