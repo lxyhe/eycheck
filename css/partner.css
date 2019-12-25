@@ -41,14 +41,6 @@
 .partner>.content>li:last-child{
     margin-bottom: 0;
 }
-.swiper-container{
-    width: 70% !important;
-}
-.swiper-slide{
-    background-color: #999999;
-    width: 100% !important;
-    padding: 0 200px;
-}
 
 .title-form{
     text-align: center;
@@ -117,6 +109,11 @@
         width: 100%;
         margin: 0 auto;
         padding: 0 16px;
+        min-height: 0px;
+    }
+    .item{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
     }
     .item>img{
         width: 104px;
@@ -177,5 +174,87 @@
     }
     .sms-btn{
         float: left;
+    }
+    .xSwiper{
+        width: 100%;
+        margin-top: 39px;
+        padding: 0 16px 43px;
+        background-color: rgba(13,76,154,1);
+        overflow: hidden;
+    }
+    .xSwiper >.top{
+        text-align: center;
+        overflow: hidden;
+    }
+    .xSwiper >.top h1{
+        margin-top: 32px;
+        font-size: 22px;
+        color: #ffffff;
+    }
+    .xSwiper >.top span{
+        display: block;
+        font-size: 14px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    .swiper-container{
+        width: 100%;
+        margin-top: 32px;
+        border-radius: 10px;
+    }
+    .swiper-slide{
+        width: 100%;
+        padding: 24px 24px;
+        background-color: #fff;
+    }
+    .swiper-slide p{
+        font-size: 12px;
+        color: #00021D;
+    }
+    .swiper-slide >.bottom{
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .swiper-slide >.bottom .icon{
+        background-color: #999999;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+    }
+    .swiper-slide >.bottom .info{
+        float: left;
+        margin-left: 13px;
+    }
+    .swiper-slide >.bottom .info p{
+        font-size: 13px;
+        color: #00021D;
+        font-weight:500;
+    }
+    .swiper-slide >.bottom .info span{
+        font-size: 10px;
+        color: #666666;
+        margin-right: 5px;
+    }
+
+    .swiper-pagination{
+        width: 100%;
+        margin-top: 4px;
+    }
+    .swiper-pagination-bullet{
+        background-color: #fff;
+        opacity: 0.29;
+        width: 20px;
+        height: 2px;
+        margin-right: 12px;
+        border-radius: 1px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+        opacity: 1;
+    }
+    .swiper-pagination{
+        text-align: center;
     }
 }
