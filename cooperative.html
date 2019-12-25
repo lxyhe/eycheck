@@ -26,7 +26,8 @@
             <header></header>
         </div>
         <div class="content_title">
-            <img src="./imgs/partner_banner.png" alt="">
+            <img class="pc-view" src="./imgs/partner_banner.png" alt="">
+            <img class="phone-view" src="./imgs/production/Group 4@2x.png" alt="">
         </div>
         <div class="content">
             <div class="partner">
@@ -81,18 +82,7 @@
                         </li>
                     </ul>
             </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./imgs/contact/1@1x.png" style="width: 100%;"/>                        
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./imgs/contact/2@1x.png" style="width: 100%;"/>                       
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./imgs/contact/3@1x.png" style="width: 100%;"/>                   
-                    </div>
-                </div>
+            <div class="xSwiper">
             </div>
             <div class="title-form">
                 <h1>欢迎给我们反馈留言</h1>
@@ -100,30 +90,37 @@
             </div>
             <form action="" class="form-horizontal cur-form">
                     <div class="form-group">
-                        <label class="col-sm-2 col-xs-2 control-label" style="color: #666666;">企业名称：</label>
-                        <div class="col-sm-10 col-xs-10">
+                        <label class="col-sm-2 col-xs-3 control-label" style="color: #666666;">企业名称：</label>
+                        <div class="col-sm-10 col-xs-9 company-view">
                             <input type="text" class="form-control" id="inputEmail3" placeholder="填写公司名称">
                         </div>
                     </div>
                     <div class="form-group" style="margin-top: 25px;">
-                        <label class="col-sm-2 control-label" style="color: #666666;">留言内容：</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-2 col-xs-3 control-label" style="color: #666666;">留言内容：</label>
+                        <div class="col-sm-10 col-xs-9 company-view">
                             <textarea style="height: 180px;" class="form-control" rows="3" placeholder="填写留言内容"></textarea>
                         </div>
                     </div>
                     <div class="form-group" style="padding-right: 14px; margin-top: 25px;">
-                        <label class="col-sm-2 control-label" style="color: #666666;">手机号：</label>
-                        <div class="col-sm-3">
+                        <label class="col-sm-2 col-xs-3 control-label" style="color: #666666;">手机号：</label>
+                        <div class="col-sm-3 col-xs-9 company-view1">
                             <input type="text" class="form-control" placeholder="填写手机号">
                         </div>
-                        <label class="col-sm-2 control-label" style="color: #666666;">短信验证码：</label>
-                        <div class="col-sm-3">
+                        <label class="col-sm-2 control-label pc-view" style="color: #666666;">短信验证码：</label>
+                        <div class="col-sm-3 pc-view">
                             <input type="text" class="form-control" placeholder="填写手机号">
                         </div>
-                        <button style="height: 40px;" type="button" class="btn btn-primary col-sm-2">获取短信验证码</button>
+                        <button style="height: 40px;" type="button" class="btn btn-primary col-sm-2 pc-view">获取短信验证码</button>
                     </div>
-                    <div class="form-group" style="margin-top: 64px;">
-                        <button type="button" class="btn btn-primary" style="width: 360px; height: 40px;">立即提交</button>
+                    <div class="form-group phone-view">
+                        <label class="sms-title" style="color: #666666; margin: 0; margin-left: 6px; line-height: 38px; width: 23%;">短信验证码：</label>
+                        <div class="sms-input" style="width: 38%;">
+                            <input type="text" class="form-control" placeholder="填写手机号">
+                        </div>
+                        <button style="height: 38px; font-size: 12px; padding: 6px; margin-left: 12px; margin-right: 16px; width: 29%;" type="button" class="btn btn-primary sms-btn">获取短信验证码</button>
+                    </div>
+                    <div class="form-group" style="margin-top: 40px; padding: 0 16px;">
+                        <button type="button" class="btn btn-primary" style="height: 42px; width: 100%;">立即提交</button>
                     </div>
             </form>
         </div>
@@ -140,15 +137,7 @@
     <script type="text/javascript" src="./js/other.js"></script>
     <script>
         window.onload = function(){
-            var mySwiper = new Swiper(".swiper-container",{
-                autoplay:1000,
-                loop:true,
-                autoplayDisableOnInteraction:false,
-                pagination:".swiper-pagination",
-                paginationClickable:true,
-                prevButton:".swiper-button-prev",
-                nextButton:".swiper-button-next",
-            })
+
         }
     </script>
 </body>

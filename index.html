@@ -41,7 +41,7 @@
                 </div>
                 <ul class="icon_list">
                     <li>
-                        <div class="col-md-4 single_item">
+                        <div class="col-md-4 single_item first_item">
                             <img src="./imgs/home/资质.png" alt="">
                             <p>资质</p>
                             <span>权威的核验资质</span>
@@ -91,6 +91,15 @@
                 <img class="preBtn" src="./imgs/home/Group 4.png" alt="">
                 <img class="nextBtn" src="./imgs/home/Group 4.png" alt="">
             </div>
+            <div class="swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""></div>
+                </div>
+                <img class="mid_preBtn" src="./imgs/home/Group 4.png" alt="">
+                <img class="mid_nextBtn" src="./imgs/home/Group 4.png" alt="">
+            </div>
             <div class="bottom_map">
                 <div class="title">
                     <p>市场覆盖</p>
@@ -122,6 +131,10 @@
                 clickable:true,
                 }
             }) 
+            var mySwiper1 = new Swiper ('.swiper-container1', {
+                direction: 'horizontal',
+                loop: true // 循环模式选项
+            })
 
             $(".preBtn").click(function(){
                 console.log('pre');

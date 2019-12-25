@@ -1,6 +1,10 @@
 
+#body{
+    min-width: 1440px;
+}
 .content_title{
     width: 100%;
+    min-width: 1440px;
 }
 .content_title img{
     width:100%;
@@ -70,11 +74,108 @@
 .control-label{
     font-size: 16px;
 }
+.pc-view{
+    display: block;
+}
+.phone-view{
+    display: none;
+}
 
+@media screen and (max-width: 640px){
+    #body{
+        min-width: 320px;
+        max-width: 640px;
+    }
+    .content_title{
+        width: 100%;
+        min-width: 320px;
+        max-width: 640px;
+    }
+    .content{
+        width: 100%;
+        margin: 0 auto;
+    }
 
-@media screen and (max-width: 378px){
-    .cur-form{
-        margin: 34px 0 48px;
+    .partner{
+        width: 100%;
+        margin: 44px auto 0;
         text-align: center;
+    }
+    .partner h2{
+        font-size: 22px;
+        color: #00021D;
+    }
+    .partner p{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        font-size: 14px;
+        color: #666666;
+    }
+    .partner > .content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    .item>img{
+        width: 104px;
+        margin-bottom: 17px;
+    }
+    .partner>.content>li{
+        margin-bottom: 0;
+    }
+
+    .title-form{
+        text-align: center;
+        margin: 48px 0 34px; 
+        padding: 0 32px;
+    }
+    .title-form h1{
+        font-size: 22px;
+        color: #00021D;
+        margin-bottom: 16px;
+    }
+    .title-form span{
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .cur-form{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 48px;
+        padding: 0 16px;
+    }
+    .form-control{
+        height: 38px;
+    }
+    .control-label{
+        font-size: 14px;
+        line-height: 38px;
+        padding: 0;
+    }
+    .company-view{
+        padding: 0;
+        padding-right: 16px;
+    }
+    .company-view1{
+        padding: 0;
+    }
+    .pc-view{
+        display: none;
+    }
+    .phone-view{
+        display: block;
+    }
+
+    .sms-title{
+        float: left;
+    }
+    .sms-input{
+        float: left;
+    }
+    .sms-btn{
+        float: left;
     }
 }
