@@ -170,6 +170,12 @@
     transition: all 0.4s;
     transform: scale(1.0);
 }
+.phone-view{
+    display: none;
+}
+.pc-view{
+    display: block;
+}
 
 @media screen and (max-width: 640px){
     #body{
@@ -181,17 +187,23 @@
     .middle_swiper{
         display: none;
     }
+    .middle-scroll{
+        position: relative;
+        padding: 0 16px;
+    }
     .swiper-container1, .swiper-container1 >.swiper-wrapper>.swiper-slide img{
         display: block;
         width: 100%;
         overflow: hidden;
-        position: relative;
     }
     .mid_preBtn{
         position: absolute;
         width: 32px;
         height: 32px;
         z-index: 100;
+        top: 50%;
+        margin-top: -16px;
+        left: 24px;
     }
     .mid_nextBtn{
         position: absolute;
@@ -199,6 +211,9 @@
         height: 32px;
         transform: rotate(180deg);
         z-index: 100;
+        top: 50%;
+        margin-top: -16px;
+        right: 24px;
     }
 
     .middle_content{
@@ -283,5 +298,11 @@
         display: table;
         margin: 32px auto;
         width: 100%;
+    }
+    .phone-view{
+        display: block;
+    }
+    .pc-view{
+        display: none;
     }
 }
