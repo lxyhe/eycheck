@@ -104,7 +104,16 @@
     text-align: center;
     color: rgba(13, 76, 154, 1);
     font-size: 16px;
+    cursor: pointer;
 }
+/* .imagetext_section+div:hover {
+    color: #fff;
+    background:rgba(13, 76, 154, 1); ;
+}
+.imagetext_section+div>span:first-child:after:hover{
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+} */
 .imagetext_section+div>span:first-child:after {
     content: "";
     width: 0.8rem;
