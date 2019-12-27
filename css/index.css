@@ -1,15 +1,2 @@
-.content{
-    min-height: 400px;
-    /* margin-bottom: 267px; */
-}
-@media screen and (min-width: 980px){
-    #body{
-        min-width: 1440px;
-    }
-}
-@media screen and (min-width: 378px){
-    #body{
-        min-width: 320px;
-    }
-}
+
 
