@@ -90,3 +90,24 @@
     color: rgba(255, 255, 255, 1);
     font-size: 15px;
 }
+
+@media screen and (max-device-width: 768px) {
+    .login_box {
+        width:311px!important;
+    }
+    .from_box{
+        width: 245px!important;
+    }
+    .code_number{
+        width: 112px!important;
+    }
+    .verification_code{
+        width: 80px!important;
+    }
+    .verification_switcher{
+        width: 45px!important;
+    }
+    .login_footer p {
+        width: 69%!important;
+    }
+}

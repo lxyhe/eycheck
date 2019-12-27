@@ -9,3 +9,24 @@ $('header').load(urlheader, function(){
 });
 
 $('footer').load(urlfooter);
+
+
+
+$(document).on("hover", ".weibo", function () {
+    console.log("1111")
+});
+
+$(".weibo").hover(function(){
+    $(".weibo_img").css("display","block");
+    console.log("1111")
+},function(){
+    $(".weibo_img").css("display","none");
+});
+
+
+$(".wechat").hover(function(){
+    console.log("2222")
+    $(".wechat_img").css("display","block");
+},function(){
+    $(".wechat_img").css("display","none");
+});

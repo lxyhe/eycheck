@@ -59,6 +59,7 @@
     list-style-type: none;
     top: 30px;
     left: 0;
+    z-index: 10;
 
 }
 
@@ -217,4 +218,62 @@
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
+}
+
+@media screen and (max-device-width: 768px) {
+    .login_box {
+        height: 62% !important;
+        min-height: 60% !important;
+        
+        max-height: 80% !important;
+        width: 90% !important;
+        overflow-y: scroll;
+    }
+
+    textarea {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .account_footer {
+        position: static;
+    }
+
+    .control-label {
+        width: 20%;
+    }
+
+    .form-control {
+        width: 70% !important;
+    }
+
+    .remark {
+        margin-top: 5% !important;
+        margin-bottom: 3% !important;
+    }
+
+    .account_body p:first-child {
+        margin-top: 5% !important;
+        margin-bottom: 3% !important;
+    }
+
+    .account_footer {
+        text-align: center;
+    }
+
+    .account_footer div {
+        width: 80%;
+    }
+
+    .account_suss_box {
+        width: 80%;
+    }
+
+    .audit {
+        width: 90%;
+    }
+
+    .back_index {
+        width: 90%;
+    }
 }

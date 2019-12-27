@@ -43,14 +43,12 @@
 
 .contact_color {
     overflow: hidden;
+    /* height: 222px; */
     background: #0D4C9A;
     /* margin-bottom: 45px; */
 
 }
 
-.weibo {
-    margin-right: 42px;
-}
 
 .records_color {
     height: 45px;
@@ -61,6 +59,7 @@
 
 .footer_left {
     /* width: 80%; */
+    position: relative;
     margin: 31px auto 0;
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.2)
@@ -96,10 +95,66 @@
     font-size: 20px;
 }
 
-.footer_con>a{
+.footer_con>a {
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     text-decoration: underline;
+}
+
+.weibo {
+    margin-right: 42px;
+    cursor: pointer;
+}
+
+.wechat {
+    cursor: pointer;
+}
+
+
+.weibo_img {
+    position: absolute;
+    width: 122px;
+    height: 156px;
+    background: #fff;
+    top: -65px;
+    left: 216px;
+    border: 1px solid rgba(13, 76, 154, 0.4);
+    z-index: 100;
+    display: none;
+
+}
+
+.weibo_img span,
+.wechat_img span {
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(13, 76, 154, 1);
+    margin: 10px auto 12px;
+}
+
+.wechat_img img,
+.wechat_img img {
+    margin: 0 auto;
+}
+
+.wechat_img {
+    position: absolute;
+    width: 122px;
+    height: 156px;
+    background: #fff;
+    top: -65px;
+    left: 216px;
+    border: 1px solid rgba(13, 76, 154, 0.4);
+    z-index: 100;
+    display: none;
+}
+
+.weibo:hover  .weibo_img{
+    display: none;
+}
+
+.wechat:hover  .wechat_img{
+   display: none;
 }
 
 @media screen and (max-device-width: 768px) {
