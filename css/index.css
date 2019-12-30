@@ -1,2 +1,8 @@
-
-
+.lisAndPhone{
+    display: block;
+}
+@media screen and (max-width: 640px){
+    .lisAndPhone{
+        display: none;
+    }
+}
