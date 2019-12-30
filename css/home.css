@@ -176,7 +176,9 @@
 .pc-view{
     display: block;
 }
-
+.preBtn,.nextBtn{
+    cursor: pointer;
+}
 @media screen and (max-width: 640px){
     #body{
         max-width: 640px;

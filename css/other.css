@@ -156,7 +156,12 @@
 .wechat:hover  .wechat_img{
    display: none;
 }
-
+.navbar-default{
+    background: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgba(13, 76, 154, 1)
+}
 @media screen and (max-device-width: 768px) {
     .footer_con>a {
         color: rgba(255, 255, 255, 0.8);

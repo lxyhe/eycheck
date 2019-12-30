@@ -263,10 +263,20 @@
         margin: 32px 0 48px;
         padding: 0 16px;
     }
+    #kkpager .pageBtnWrap{
+        float: right!important;
+    }
     #kkpager{
         width: 100% !important;
     }
-
+    .content_body>ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    #kkpager a{
+        margin-right: 2px!important;
+        padding: 3px 5px 3px 10px!important;
+    }
     /* 新闻内页 */
     .content{
         min-width: 320px;
