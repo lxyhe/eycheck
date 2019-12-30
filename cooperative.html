@@ -82,6 +82,72 @@
                         </li>
                     </ul>
             </div>
+            <div class="swiper-out pc-view" style="background-color: #0D4C9A; height: 720px; overflow: hidden;">
+                <div class="mid-top">
+                    <p>客户之声</p>
+                    <span>用户的认可和建议让我们的产品越来越完善</span>
+                </div>
+                <div style="width: 80%; margin: 0 auto; height: 321px; overflow: hidden;" class="pc-swiper">
+                    <div class="swiper-container1">
+                        <div class="swiper-wrapper">
+                            <div style="opacity: 1;" class="swiper-slide">
+                                <!-- <img style="opacity: 0; " src="./imgs/home/Rectangle Copy 13@1x.png" alt=""> -->
+                                <div class="text-view">
+                                    <p>
+                                        节较标才取取格期为直实位求文命面加外他委治式车定号极变几形认基她般新用学们是备所需便统直。
+                                        领最声眼领式积今说品代九众关以作年分组战保然适门己以示机经例其组清里按适制子多又铁提二称
+                                        再在华向道除但知劳族指除象权导支。
+                                    </p>
+                                    <div class="bottom-view">
+                                        <div class="left"></div>
+                                        <div class="right">
+                                            <p>慕悦佳</p>
+                                            <span>广州塔酒店</span>
+                                            <span>高级业务经理</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="opacity: 1;" class="swiper-slide">
+                                <!-- <img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""> -->
+                                <div class="text-view">
+                                    <p>
+                                        节较标才取取格期为直实位求文命面加外他委治式车定号极变几形认基她般新用学们是备所需便统直。
+                                        领最声眼领式积今说品代九众关以作年分组战保然适门己以示机经例其组清里按适制子多又铁提二称
+                                        再在华向道除但知劳族指除象权导支。
+                                    </p>
+                                    <div class="bottom-view">
+                                        <div class="left"></div>
+                                        <div class="right">
+                                            <p>慕悦佳</p>
+                                            <span>广州塔酒店</span>
+                                            <span>高级业务经理</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="opacity:1;" class="swiper-slide">
+                                <!-- <img src="./imgs/home/Rectangle Copy 13@1x.png" alt=""> -->
+                                <div class="text-view">
+                                    <p>
+                                        节较标才取取格期为直实位求文命面加外他委治式车定号极变几形认基她般新用学们是备所需便统直。
+                                        领最声眼领式积今说品代九众关以作年分组战保然适门己以示机经例其组清里按适制子多又铁提二称
+                                        再在华向道除但知劳族指除象权导支。
+                                    </p>
+                                    <div class="bottom-view">
+                                        <div class="left"></div>
+                                        <div class="right">
+                                            <p>慕悦佳</p>
+                                            <span>广州塔酒店</span>
+                                            <span>高级业务经理</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="xSwiper phone-view">
                 <div class="top">
                     <h1>客户之声</h1>
@@ -230,6 +296,26 @@
                     el: '.swiper-pagination',
                     clickable:true
                 }
+            }) 
+
+            var mySwiper1 = new Swiper ('.swiper-container1', {
+                // loop模式下会在slides前后复制若干个slide,，前后复制的个数不会大于原总个数
+                loopAdditionalSlides: 5,// 解决滑动到最后一页的时候出现空白页问题
+                centeredSlides: true, // 选中slide居中显示
+                initialSlide: 1, // 默认选中项索引
+                slidesPerView: 1, // 自动匹配每次显示的slide个数,loop='auto'模式下，还需要设置loopedSlides
+                effect: 'coverflow', // 切换效果-3d
+                loop: true, // 循环模式选项
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 150,
+                    depth: 120,
+                    modifier: 2,
+                    slideShadows: false
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                },
             }) 
         })
     </script>

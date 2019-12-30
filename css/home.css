@@ -139,6 +139,7 @@
     top: 50%;
     margin-top: -22px;
     left: 151px;
+    z-index: 1000;
 }
 .nextBtn{
     position: absolute;
@@ -146,6 +147,7 @@
     margin-top: -22px;
     right: 142px;
     transform: rotate(180deg);
+    z-index: 1000;
 }
 .next{
     transition: all 0.4s;
