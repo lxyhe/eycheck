@@ -213,7 +213,11 @@
             })
             $("#product_btn").hover(function (event) {
                 if (event.type == 'mouseenter') {
+<<<<<<< HEAD
                     $(".content_header_top").stop(true).slideDown(function () {
+=======
+                    $(".content_header_top").stop(false,false).slideDown(function () {
+>>>>>>> 6352b77399f0be5d59e416072f1da7d2547d597b
                         btnIsShow = true;
                         viewIsShow = false;
                     });
@@ -221,7 +225,11 @@
                     setTimeout(() => {
                         if (viewIsShow) return;
                         console.log('btn: mouseleave');
+<<<<<<< HEAD
                         $(".content_header_top").stop(true).slideUp(function () {
+=======
+                        $(".content_header_top").stop(false,false).slideUp(function () {
+>>>>>>> 6352b77399f0be5d59e416072f1da7d2547d597b
                             btnIsShow = false;
                         });
                     }, 0);
@@ -229,7 +237,11 @@
             })
             $(".content_header_top").hover(function (event) {
                 if (event.type == 'mouseenter') {
+<<<<<<< HEAD
                     $(".content_header_top").stop(true).slideDown(function () {
+=======
+                    $(".content_header_top").stop(false,false).slideDown(function () {
+>>>>>>> 6352b77399f0be5d59e416072f1da7d2547d597b
                         viewIsShow = true;
                         btnIsShow = false;
                     });
@@ -237,7 +249,11 @@
                     setTimeout(() => {
                         if (btnIsShow) return;
                         console.log('header_top: mouseleave');
+<<<<<<< HEAD
                         $(".content_header_top").stop(true).slideUp(function () {
+=======
+                        $(".content_header_top").stop(false,false).slideUp(function () {
+>>>>>>> 6352b77399f0be5d59e416072f1da7d2547d597b
                             viewIsShow = false;
                         });
                     }, 0);

@@ -72,6 +72,71 @@
 .phone-view{
     display: none;
 }
+.swiper-slide-prev div{
+    float: right;
+}
+.swiper-slide-prev div div{
+    float: left;
+}
+.swiper-slide-next div{
+    float: left;
+}
+.text-view{
+    background-color: #fff;
+    width: 440px;
+    height: 320px;
+    margin: 0 auto;
+    padding: 39px 40px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.text-view p{
+    font-size: 18px;
+    color: #00021D;
+}
+.text-view > .bottom-view{
+    overflow: hidden;
+    margin-top: 32px;
+}
+.text-view > .bottom-view .left{
+    background-color: #999;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.text-view > .bottom-view .right p{
+    font-size: 20px;
+    color: #00021D;
+    margin-bottom: 8px;
+}
+.text-view > .bottom-view .right span{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #666;
+}
+.swiper-out{
+    margin-top: 67px;
+}
+.mid-top{
+    margin: 64px auto;
+    text-align: center;
+}
+.mid-top p{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.mid-top span{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+.swiper-slide{
+    height: 321px;
+}
 
 @media screen and (max-width: 640px){
     #body{
