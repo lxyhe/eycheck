@@ -266,7 +266,7 @@
             $("#solution_btn").hover(function (event) {
 
                 if (event.type == 'mouseenter') {
-                    $(".content_header_top").slideDown(function () {
+                    $(".content_header_top").stop(false,false).slideDown(function () {
                         btnIsShow = true;
                         viewIsShow = false;
                     });
@@ -274,7 +274,7 @@
                     setTimeout(() => {
                         if (viewIsShow) return;
                         console.log('btn: mouseleave');
-                        $(".content_header_top").slideUp(function () {
+                        $(".content_header_top").stop(false,false).slideUp(function () {
                             btnIsShow = false;
                         });
                     }, 0);
@@ -283,7 +283,7 @@
             })
             $(".content_header_top").hover(function (event) {
                 if (event.type == 'mouseenter') {
-                    $(".content_header_top").slideDown(function () {
+                    $(".content_header_top").stop(false,false).slideDown(function () {
                         viewIsShow = true;
                         btnIsShow = false;
                     });
@@ -291,7 +291,7 @@
                     setTimeout(() => {
                         if (btnIsShow) return;
                         console.log('header_top: mouseleave');
-                        $(".content_header_top").slideUp(function () {
+                        $(".content_header_top").stop(false,false).slideUp(function () {
                             viewIsShow = false;
                         });
                     }, 0);
