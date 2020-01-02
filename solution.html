@@ -273,39 +273,40 @@
                 location.href = "./solution_hotel.html"
             })
 
-            $("#solution_btn").hover(function (event) {
-                if (event.type == 'mouseenter') {
-                    $(".content_header_top").stop(false,false).slideDown(function () {
-                        btnIsShow = true;
-                        viewIsShow = false;
-                    });
-                } else if (event.type == 'mouseleave') {
-                    setTimeout(() => {
-                        if (viewIsShow) return;
-                        console.log('btn: mouseleave');
-                        $(".content_header_top").stop(false,false).slideUp(function () {
-                            btnIsShow = false;
-                        });
-                    }, 0);
-                }
-
-            })
-            $(".content_header_top").hover(function (event) {
-                if (event.type == 'mouseenter') {
-                    $(".content_header_top").stop(false,false).slideDown(function () {
-                        viewIsShow = true;
-                        btnIsShow = false;
-                    });
-                } else if (event.type == 'mouseleave') {
-                    setTimeout(() => {
-                        if (btnIsShow) return;
-                        console.log('header_top: mouseleave');
-                        $(".content_header_top").stop(false,false).slideUp(function () {
+            setTimeout(() => {
+                $("#solution_btn").hover(function (event) {
+                    if (event.type == 'mouseenter') {
+                        $(".content_header_top").stop(false,false).slideDown(function () {
+                            btnIsShow = true;
                             viewIsShow = false;
                         });
-                    }, 0);
-                }
-            })
+                    } else if (event.type == 'mouseleave') {
+                        setTimeout(() => {
+                            if (viewIsShow) return;
+                            console.log('btn: mouseleave');
+                            $(".content_header_top").stop(false,false).slideUp(function () {
+                                btnIsShow = false;
+                            });
+                        }, 0);
+                    }
+                })
+                $(".content_header_top").hover(function (event) {
+                    if (event.type == 'mouseenter') {
+                        $(".content_header_top").stop(false,false).slideDown(function () {
+                            viewIsShow = true;
+                            btnIsShow = false;
+                        });
+                    } else if (event.type == 'mouseleave') {
+                        setTimeout(() => {
+                            if (btnIsShow) return;
+                            console.log('header_top: mouseleave');
+                            $(".content_header_top").stop(false,false).slideUp(function () {
+                                viewIsShow = false;
+                            });
+                        }, 0);
+                    }
+                })
+            }, 100);
         })
     </script>
 
