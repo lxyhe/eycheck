@@ -64,8 +64,8 @@
                         <div class="col-md-6 imagetext_box imagetext_box_gray">
                             <div class="imagetext_subbox" style="width: 80%; float: right; margin-right: 25px;">
                                 <p>
-                                    <img src="./imgs/production/个人方案.png"
-                                        style="width:32px;height: 32px; vertical-align: bottom;" alt="">
+                                    <img src="./imgs/production/个人方案@2x.png"
+                                        style="width:32px;height: 32px; vertical-align: top;" alt="">
                                     <span>个人方案</span>
                                 </p>
                                 <div class="imagetext_section">
@@ -75,7 +75,7 @@
                                     化西具克难飞术种意手华很山油层反元我做话把它候制小
                                     这速状划响极识。及想求也将就值切最县须空是光东军府。
                                 </div>
-                                <div>
+                                <div class="person-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@
                         <div class="col-md-6 imagetext_box">
                             <div class="imagetext_subbox" style="width: 80%; margin-left: 25px;">
                                 <p>
-                                    <img src="./imgs/production/个人方案.png"
-                                        style="width:32px;height: 32px; vertical-align: bottom;" alt="">
+                                    <img src="./imgs/production/企业方案@2x.png"
+                                        style="width:32px;height: 32px; vertical-align: top;" alt="">
                                     <span>企业方案</span>
                                 </p>
                                 <div class="imagetext_section">
@@ -101,7 +101,7 @@
                                     线线工江千这形取放式写。已学非广族多们维去劳点但
                                     重青由办运议明资至南声元用书。
                                 </div>
-                                <div>
+                                <div class="company-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -111,8 +111,8 @@
                         <div class="col-md-6 imagetext_box imagetext_box_gray">
                             <div class="imagetext_subbox" style="width: 80%; float: right; margin-right: 25px;">
                                 <p>
-                                    <img src="./imgs/production/个人方案.png"
-                                        style="width:32px;height: 32px; vertical-align: bottom;" alt="">
+                                    <img src="./imgs/production/政府合作@2x.png"
+                                        style="width:32px;height: 32px; vertical-align: top;" alt="">
                                     <span>政府合作</span>
                                 </p>
                                 <div class="imagetext_section">
@@ -124,7 +124,7 @@
                                     华很山油层反元我做话把它候制小这速状划响极识。
                                     及想求也将就值切最县须空是光东军府。
                                 </div>
-                                <div>
+                                <div class="gover-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -211,38 +211,51 @@
             $(".gover-idea").on("click", function () {
                 location.href = "./gover_coop.html"
             })
-            $("#product_btn").hover(function (event) {
-                if (event.type == 'mouseenter') {
-                    $(".content_header_top").stop(false,false).slideDown(function () {
-                        btnIsShow = true;
-                        viewIsShow = false;
-                    });
-                } else if (event.type == 'mouseleave') {
-                    setTimeout(() => {
-                        if (viewIsShow) return;
-                        console.log('btn: mouseleave');
-                        $(".content_header_top").stop(false,false).slideUp(function () {
-                            btnIsShow = false;
-                        });
-                    }, 0);
-                }
+
+            $(".person-more").on("click", function(){
+                location.href = "./personal_plain_info.html";
             })
-            $(".content_header_top").hover(function (event) {
-                if (event.type == 'mouseenter') {
-                    $(".content_header_top").stop(false,false).slideDown(function () {
-                        viewIsShow = true;
-                        btnIsShow = false;
-                    });
-                } else if (event.type == 'mouseleave') {
-                    setTimeout(() => {
-                        if (btnIsShow) return;
-                        console.log('header_top: mouseleave');
-                        $(".content_header_top").stop(false,false).slideUp(function () {
+            $(".company-more").on("click", function(){
+                location.href = "./company_plain_info.html"
+            })
+            $(".gover-more").on("click", function(){
+                location.href = "./gover_coop.html"
+            })
+            setTimeout(()=>{
+                $("#product_btn").hover(function (event) {
+                    if (event.type == 'mouseenter') {
+                        $(".content_header_top").stop(false,false).slideDown(function () {
+                            btnIsShow = true;
                             viewIsShow = false;
                         });
-                    }, 0);
-                }
-            })
+                    } else if (event.type == 'mouseleave') {
+                        setTimeout(() => {
+                            if (viewIsShow) return;
+                            console.log('btn: mouseleave');
+                            $(".content_header_top").stop(false,false).slideUp(function () {
+                                btnIsShow = false;
+                            });
+                        }, 0);
+                    }
+                })
+
+                $(".content_header_top").hover(function (event) {
+                    if (event.type == 'mouseenter') {
+                        $(".content_header_top").stop(false,false).slideDown(function () {
+                            viewIsShow = true;
+                            btnIsShow = false;
+                        });
+                    } else if (event.type == 'mouseleave') {
+                        setTimeout(() => {
+                            if (btnIsShow) return;
+                            console.log('header_top: mouseleave');
+                            $(".content_header_top").stop(false,false).slideUp(function () {
+                                viewIsShow = false;
+                            });
+                        }, 0);
+                    }
+                })
+            },100)
         })
     </script>
 </body>

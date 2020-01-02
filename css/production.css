@@ -56,10 +56,12 @@
     font-size: 28px;
     color: #00021D;
     margin-bottom: 24px;
+    font-weight: 600;
 }
 .content_detail>.content_detail_header span{
     font-size: 18px;
     color: #666666;
+    font-weight: 300;
 }
 
 .pc_middle{
@@ -89,12 +91,17 @@
 .imagetext_subbox p span{
     font-size: 24px;
     color: #00021D;
+    font-weight: 500;
 }
 .imagetext_section{
     font-size: 18px;
     color: #666666;
     margin-top: 49px;
     margin-bottom: 48px;
+    font-weight:400;
+    line-height:29px;
+    text-align: justify;
+    letter-spacing: 0;
 }
 .imagetext_section+div {
     width: 156px;
@@ -104,6 +111,7 @@
     text-align: center;
     color: rgba(13, 76, 154, 1);
     font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
 }
 /* .imagetext_section+div:hover {
@@ -120,8 +128,8 @@
     height: 0.8rem;
     margin-left: 10px;
     display: inline-block;
-    border-top: 1px solid rgba(13, 76, 154, 1);
-    border-right: 1px solid rgba(13, 76, 154, 1);
+    border-top: 2px solid rgba(13, 76, 154, 1);
+    border-right: 2px solid rgba(13, 76, 154, 1);
     transform: rotate(45deg);
 }
 .imagetext_box_gray{

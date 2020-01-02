@@ -52,11 +52,13 @@ li {
     font-size: 28px;
     color: #00021D;
     margin-bottom: 24px;
+    font-weight: 600;
 }
 
 .content_body_title p:last-child {
     font-size: 18px;
-    color: rgba(102, 102, 102, 1)
+    color: rgba(102, 102, 102, 1);
+    font-weight: 300;
 }
 
 .content_body_imagetext {
@@ -73,13 +75,15 @@ li {
 .imagetext_subbox>p>span {
     font-size: 24px;
     color: rgba(0, 2, 29, 1);
-
+    font-weight: 500;
 }
 
 .imagetext_section {
     font-size: 16px;
     color: rgba(102, 102, 102, 1);
     margin-bottom: 48px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .imagetext_section+div {
@@ -91,6 +95,7 @@ li {
     color: rgba(13, 76, 154, 1);
     font-size: 16px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .imagetext_section+div>span:first-child:after {
@@ -99,8 +104,8 @@ li {
     height: 0.8rem;
     margin-left: 10px;
     display: inline-block;
-    border-top: 1px solid rgba(13, 76, 154, 1);
-    border-right: 1px solid rgba(13, 76, 154, 1);
+    border-top: 2px solid rgba(13, 76, 154, 1);
+    border-right: 2px solid rgba(13, 76, 154, 1);
     transform: rotate(45deg);
 }
 
@@ -142,6 +147,10 @@ li {
 .contact:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(13, 76, 154, 1);
+}
+.net-text-view{
+    padding-left: 252px !important;
+    padding-right: 252px !important;
 }
 
 /* 跨级电商解决方案*/
@@ -216,6 +225,7 @@ li {
     width: 360px;
     border: 1px solid rgba(0, 2, 29, 0.08);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .serve_list li:first-child {
@@ -337,11 +347,13 @@ li {
     .single_view > .top > span{
         font-size: 15px;
         color: #00021D;
+        font-weight: 500;
     }
     .single_view > .imagetext_section{
         margin: 0 16px;
         color: #666666;
         font-size: 12px;
+        line-height: 16px;
     }
     .single_view > .bottom{
         width: 96px;
@@ -351,7 +363,12 @@ li {
         text-align: center;
         color: #0D4C9A;
         font-size: 10px;
+        font-weight: 500;
         margin: 31px auto;
+    }
+    .net-text-view{
+        padding-left: 32px !important;
+        padding-right: 32px !important;
     }
 
     /* 跨级电商解决方案*/

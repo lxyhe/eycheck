@@ -24,11 +24,13 @@
 .text_view>span{
     font-size: 28px;
     color: #00021D;
+    font-weight: 600;
 }
 .text_view>p{
     font-size: 18px;
     color: #666666;
     margin-top: 24px;
+    font-weight: 300;
 }
 .product{
     margin-top: 88px;

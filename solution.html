@@ -85,7 +85,7 @@
                                     达到“实人实证、人证合一”的目的，
                                     从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                                 </div>
-                                <div>
+                                <div class="net-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                     该方案通过对入住人的“实名+实人+实证+实时”的管理，达到“实人实证、
                                     人证合一”的目的，从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                                 </div>
-                                <div>
+                                <div class="show-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
                                     该方案通过对入住人的“实名+实人+实证+实时”的管理，达到“实人实证、
                                     人证合一”的目的，从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                                 </div>
-                                <div>
+                                <div class="coop-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                                 <div class="imagetext_section">
                                     这是关于这个方案的大概介绍文案内容：该方案通过对入住人的“实名+实人+实证+实时”的管理，达到“实人实证、人证合一”的目的，从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                                 </div>
-                                <div>
+                                <div class="hotel-more">
                                     <span>了解更多</span> <i></i>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@
                                 的“实名+实人+实证+实时”的管理，达到“实人实证、人证合一
                                 ”的目的，从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                         </div>
-                        <div class="bottom">
+                        <div class="bottom net-more">
                             <span>了解更多</span> <i></i>
                         </div>
                     </li>
@@ -194,7 +194,7 @@
                                 的“实名+实人+实证+实时”的管理，达到“实人实证、人证合一”的
                                 目的，从而实现了政府及时掌握相关信息，网约房平台和经方合规经营。
                         </div>
-                        <div class="bottom">
+                        <div class="bottom show-more">
                             <span>了解更多</span> <i></i>
                         </div>
                     </li>
@@ -209,7 +209,7 @@
                                 +实证+实时”的管理，达到“实人实证、人证合一”的目的，从而实现了政府
                                 及时掌握相关信息，网约房平台和经方合规经营。
                         </div>
-                        <div class="bottom">
+                        <div class="bottom coop-more">
                             <span>了解更多</span> <i></i>
                         </div>
                     </li>
@@ -224,7 +224,7 @@
                                 +实证+实时”的管理，达到“实人实证、人证合一”的目的，从而实现了政府
                                 及时掌握相关信息，网约房平台和经方合规经营。
                         </div>
-                        <div class="bottom">
+                        <div class="bottom hotel-more">
                             <span>了解更多</span> <i></i>
                         </div>
                     </li>
@@ -249,22 +249,31 @@
             $(".personal-idea").on("click", function () {
                 location.href = "./solution_net.html";
             })
-
             $(".commpany-idea").on("click", function () {
                 location.href = "./solition_cross.html"
             })
-
             $(".gover-idea").on("click", function () {
                 location.href = "./solution_wisdom.html"
             })
-
             $(".gover-idea1").on("click", function () {
                 location.href = "./solution_hotel.html"
             })
 
+            // 点击更多跳转
+            $(".net-more").on("click", function(){
+                location.href = "./solution_net.html";
+            })
+            $(".show-more").on("click", function(){
+                location.href = "./solition_cross.html"
+            })
+            $(".coop-more").on("click", function(){
+                location.href = "./solution_wisdom.html"
+            })
+            $(".hotel-more").on("click", function(){
+                location.href = "./solution_hotel.html"
+            })
 
             $("#solution_btn").hover(function (event) {
-
                 if (event.type == 'mouseenter') {
                     $(".content_header_top").stop(false,false).slideDown(function () {
                         btnIsShow = true;

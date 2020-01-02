@@ -35,6 +35,9 @@
 .partner>.content>li{
     overflow: hidden;
 }
+.partner>.content>li>div>img{
+    width: 168px;
+}
 .partner>.content>li{
     margin-bottom: 24px;
 }
@@ -83,8 +86,8 @@
 }
 .text-view{
     background-color: #fff;
-    width: 440px;
-    height: 320px;
+    width: 552px;
+    height: 395px;
     margin: 0 auto;
     padding: 39px 40px;
     border-radius: 16px;
@@ -93,6 +96,9 @@
 .text-view p{
     font-size: 18px;
     color: #00021D;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 .text-view > .bottom-view{
     overflow: hidden;
@@ -110,6 +116,7 @@
     font-size: 20px;
     color: #00021D;
     margin-bottom: 8px;
+    font-weight: 500;
 }
 .text-view > .bottom-view .right span{
     margin-right: 10px;
@@ -135,7 +142,7 @@
     color: #fff;
 }
 .swiper-slide{
-    height: 321px;
+    height: 395px;
     border-radius: 16px;
     overflow: hidden;
 }
@@ -143,11 +150,16 @@
     width: 50px;
     height: 50px;
     position: absolute;
+    left: 92px;
 }
 .mid_nextBtn{
     width: 50px;
     height: 50px;
     transform: rotate(180deg);
+    right: 92px;
+}
+.swiper-slide-next, .swiper-slide-prev{
+    opacity: 0.3 !important;
 }
 
 @media screen and (max-width: 640px){
@@ -193,7 +205,7 @@
         padding-left: 0 !important;
     }
     .item>img{
-        width: 104px;
+        width: 104px !important;
         margin-bottom: 17px;
     }
     .partner>.content>li{
