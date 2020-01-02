@@ -136,6 +136,18 @@
 }
 .swiper-slide{
     height: 321px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.mid_preBtn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.mid_nextBtn{
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 640px){
@@ -271,6 +283,9 @@
         width: 100%;
         padding: 24px 24px;
         background-color: #fff;
+        height: auto;
+        border-radius: 0;
+        overflow: auto;
     }
     .swiper-slide p{
         font-size: 12px;
@@ -304,7 +319,7 @@
     }
 
     .swiper-pagination{
-        width: 100%;
+        margin-left: calc(50% - 64px); ;
         margin-top: 4px;
     }
     .swiper-pagination-bullet{

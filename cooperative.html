@@ -87,7 +87,7 @@
                     <p>客户之声</p>
                     <span>用户的认可和建议让我们的产品越来越完善</span>
                 </div>
-                <div style="width: 80%; margin: 0 auto; height: 321px; overflow: hidden;" class="pc-swiper">
+                <div style="width: 80%; margin: 0 auto; height: 321px; overflow: hidden; position: relative;">
                     <div class="swiper-container1">
                         <div class="swiper-wrapper">
                             <div style="opacity: 1;" class="swiper-slide">
@@ -146,6 +146,8 @@
                             </div>
                         </div>
                     </div>
+                    <img class="mid_preBtn swiper-button-prev" src="./imgs/home/Group 4@2x.png" alt="">
+                    <img class="mid_nextBtn swiper-button-next" src="./imgs/home/Group 4@2x.png" alt="">
                 </div>
             </div>
             <div class="xSwiper phone-view">
@@ -306,16 +308,17 @@
                 slidesPerView: 1, // 自动匹配每次显示的slide个数,loop='auto'模式下，还需要设置loopedSlides
                 effect: 'coverflow', // 切换效果-3d
                 loop: true, // 循环模式选项
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 150,
                     depth: 120,
                     modifier: 2,
-                    slideShadows: false
-                },
-                pagination: {
-                    el: '.swiper-pagination'
-                },
+                    slideShadows: true
+                }
             }) 
         })
     </script>
