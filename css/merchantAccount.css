@@ -34,6 +34,7 @@
     text-align: center;
     cursor: pointer;
     position: relative;
+
 }
 
 .account_select_arrows {
@@ -42,10 +43,11 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #000;
+    border-top: 6px solid rgba(13, 76, 154, 1);;
     position: relative;
     top: -4px;
     left: 2px;
+    color: rgba(13, 76, 154, 1);
 }
 
 .account_select_list {
@@ -63,6 +65,9 @@
 
 }
 
+textarea{
+    padding: 8px;
+}
 .account_select_list li {
     height: 40px;
     line-height: 40px;
@@ -76,13 +81,19 @@
     margin-left: 32px;
 }
 
+.control-label {
+    font-family: PingFang-SC-Regular, PingFang-SC;
+    font-weight: 400;
+}
+
 .account_body p:first-child {
     width: 64px;
     height: 22px;
     font-size: 16px;
     margin-top: 40px;
-
     margin-bottom: 20px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
 }
 
 .company {
@@ -95,7 +106,7 @@
 }
 
 .control-label {
-    min-width: 61px;
+    min-width: 87px;
     text-align: left !important;
     font-size: 14px;
 }
@@ -106,6 +117,7 @@
     height: 32px;
     border-radius: 4px;
     border: 1px solid rgba(232, 232, 232, 1);
+    box-shadow:none
 }
 
 .remark {
@@ -219,17 +231,26 @@
     margin: 0 auto;
     cursor: pointer;
 }
-
+.form-group{
+    margin-right: 15px!important;
+}
 @media screen and (max-device-width: 768px) {
+    .control-label{
+        min-width: 61px;
+    }
     .login_box {
         height: 62% !important;
         min-height: 60% !important;
-        
+
         max-height: 80% !important;
         width: 90% !important;
         overflow-y: scroll;
     }
 
+    .account_body input {
+       
+        box-shadow:none
+    }
     textarea {
         width: 90% !important;
         height: auto !important;
