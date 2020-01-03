@@ -31,8 +31,8 @@
     height: 33px;
 
 }
-.input{
-    box-shadow: none;
+..form-control{
+    box-shadow: none!important;
 }
 .verification_code {
     display: inline-block;

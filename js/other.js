@@ -94,8 +94,8 @@ content.style = "position: relative;";
 var customerService = document.createElement("div");
 customerService.className = "lisAndPhone"
 customerService.style = "position: fixed; top:640px; right:24px;z-index:100"
-customerService.innerHTML = `<img style="width: 48px; height: 48px; background-color: #0D4C9A; display: block;border-bottom: 1px solid #fff;cursor: pointer;" src="../imgs/在线联系.png">
-                            <img style="width: 48px; height: 48px; background-color: #0D4C9A;cursor: pointer;" src="../imgs/电话联系.png">`
+customerService.innerHTML = `<img style="width: 48px; height: 48px; background-color: #0D4C9A; display: block;border-bottom: 1px solid #fff;cursor: pointer;" src="../imgs/online.png">
+                            <img style="width: 48px; height: 48px; background-color: #0D4C9A;cursor: pointer;" src="../imgs/phone.png">`
 content.appendChild(customerService);
 
 
