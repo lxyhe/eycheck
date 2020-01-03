@@ -31,7 +31,9 @@
     height: 33px;
 
 }
-
+..form-control{
+    box-shadow: none!important;
+}
 .verification_code {
     display: inline-block;
     width: 90px;
