@@ -21,20 +21,19 @@
     cursor: pointer;
 
 }
-
+.content_body{
+    padding: 0 156px;
+}
 .content_body>ul>li:first-child {
     background: #0D4C9A;
     color: #fff;
 }
-
 .content_body_newlist>ul>li {
     overflow: hidden;
     padding: 40px 0;
     border-bottom: 1px solid #EEEEEE;
     cursor: pointer;
 }
-
-.content_body_newlist>ul>li .col-md-3 {}
 
 .content_body_subtitle {
     max-width: 576px;
@@ -43,6 +42,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .content_body_time {
@@ -54,6 +54,9 @@
 .content_body_particulars {
     font-size: 16px;
     color: #999;
+    line-height: 26px;
+    text-align: justify;
+    letter-spacing: 0;
 }
 
 .paging {
@@ -208,6 +211,7 @@
         width: 100%;
         max-width: 640px;
         min-width: 320px;
+        padding: 0;
     }
     .content_body>ul {
         margin-top: 44px;

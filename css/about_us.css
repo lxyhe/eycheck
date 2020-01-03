@@ -12,11 +12,16 @@
     text-align: center;
     color: #00021D;
     font-size: 28px;
+    font-weight: 600;
 }
 .detail_view p{
     margin-top: 32px;
     font-size: 16px;
     color: #666666;
+    line-height: 26px;
+    text-align: justify;
+    letter-spacing: 0;
+    font-weight: 400;
 }
 
 .main_product{
@@ -33,11 +38,13 @@
 .title_view > h1{
     color: #00021D;
     font-size: 28px;
+    font-weight: 600;
 }
 .title_view >p{
     font-size: 16px;
     color: #666666;
     margin-top: 24px;
+    font-weight:300;
 }
 .main_product > .product_content{
     width: 80%;
@@ -62,11 +69,16 @@
     font-size: 24px;
     color: #00021D;
     padding: 40px  0 24px;
+    font-weight: 600;
 }
 .main_product >.product_content>.item>.bottom>p{
     font-size: 18px;
     color: #666666;
     padding: 0 32px;
+    line-height: 29px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
 }
 .team_title{
     text-align: center;
@@ -80,11 +92,13 @@
 .team_title > h1{
     color: #00021D;
     font-size: 28px;
+    font-weight: 600;
 }
 .team_title > p{
     font-size: 18px;
     color: #666666;
     margin-top: 24px;
+    font-weight: 300;
 }
 
 .info_view{
@@ -106,16 +120,21 @@
 .info_view >li >div:last-child > p:nth-child(1){
     font-size: 24px;
     color: #00021D;
+    font-weight: 500;
 }
 .info_view >li >div:last-child > p:nth-child(2){
     font-size: 18px;
     color: #00021D;
     margin-top: 16px;
+    font-weight: 500;
 }
 .info_view >li >div:last-child > p:nth-child(3){
     font-size: 18px;
     color: #666666;
     margin-top: 48px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0;
 }
 .phone-view{
     display: none;
@@ -235,10 +254,13 @@
     .swiper-slide > .bottom > h2{
         font-size: 23px;
         margin-top: 37px;
+        font-weight: 600;
     }
     .swiper-slide > .bottom > p{
         font-size: 17px;
         margin-top: 22px;
+        font-weight: 400;
+        line-height: 28px;
     }
 
     .swiper-pagination{
