@@ -204,6 +204,16 @@
         width: 100%;
         overflow: hidden;
     }
+    /* .swiper-container1, .swiper-container1 >.swiper-wrapper>.swiper-slide{
+        position: relative;
+    }
+    .swiper-container1, .swiper-container1 >.swiper-wrapper>.swiper-slide>.shadow{
+        width: 100%;
+        background-color: rgba(13,76,154,0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
     .mid_preBtn{
         position: absolute;
         width: 32px;

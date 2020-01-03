@@ -1,6 +1,9 @@
 .lisAndPhone{
     display: block;
 }
+h1, h2, h3, h4, h5, span, p, div, a{
+    font-family:"微软雅黑" !important;
+}
 @media screen and (max-width: 640px){
     .lisAndPhone{
         display: none;
