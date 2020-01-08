@@ -5,6 +5,7 @@ var app = new Vue({
         totalTime: 60,
         canClick: true,
         isShow: true,
+        
     },
 
     methods: {
@@ -34,5 +35,8 @@ var app = new Vue({
             console.log("login")
             window.location.href = "../html/login.html"
         }
+   
+
+
     }
 })
