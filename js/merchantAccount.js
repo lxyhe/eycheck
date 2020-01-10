@@ -20,32 +20,25 @@ var app = new Vue({
         commercialID: "1",
         commercialType: "p",
         isShowModal: false,
-        personage: {
-            name: "",
-            tel: "",
-            email: "",
-            textarea: "",
-        },
+        name: "",
+        tel: "",
+        email: "",
+        textarea: "",
+        
         enterprise: {
-            name: "",
-            tel: "",
-            email: "",
-            textarea: "",
+           
             enterpriseName: "", //企业名称
             industry: "", //行业
             site: "", //地址
             enterprisePhone: "", //企业电话
             capital: "", //注册资本
-            textarea: "", //备注
+           
         },
         government: {
-            name: "",
-            tel: "",
-            email: "",
-            textarea: "",
+           
             governmentName: "", //政府名称
             site: "", //地址
-            textarea: "", //备注
+            
         }
     },
 
@@ -57,20 +50,23 @@ var app = new Vue({
         selectAccountList(item) {
             this.isShowLIst = !this.isShowLIst;
             this.commercial = item.name;
-            console.log(item.id);
             this.commercialID = item.id;
             this.commercialType = item.type;
+            this.name= "";
+            this.tel="";
+            this.email= "";
+            this.textarea= "";
         },
-        phoneCheck() { //验证手机号
+        phoneCheck(phone) { //验证手机号
             var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
-            if (!myreg.test($poneInput.val())) {
+            if (!myreg.test(phone)) {
                 return false;
             } else {
                 return true;
             }
         },
-        emailCheck() { //验证邮箱
-            var email = this.value;
+        emailCheck(email) { //验证邮箱
+
             var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
             if (!reg.test(email)) {
                 return false;
@@ -92,43 +88,64 @@ var app = new Vue({
 
             if (_this.XHR) {
                 let postData = {};
-                if (this.commercialType == "p") { //个人商户
-                    postData = {
-                        "name": _this.personage.name,
-                        "tel": _this.personage.tel,
-                        "email": _this.personage.email,
-                        "textarea": _this.personage.textarea,
-                        "type": _this.commercialType
-                    }
+                if(!_this.name){
+                    alert("名字不能为空")
+                    return
                 }
-                if (this.commercialType == "e") { //企业商户
-                    postData = {
-                        "name": _this.personage.name,
-                        "tel": _this.personage.tel,
-                        "email": _this.personage.email,
-                        "textarea": _this.personage.textarea,
-                        "type": _this.commercialType
-                    }
+                if(!_this.phoneCheck(_this.tel)){
+                    alert("请输入正确得手机号")
+                    return
                 }
-                if (this.commercialType == "g") { //政府商户
-                    postData = {
-                        "name": _this.personage.name,
-                        "tel": _this.personage.tel,
-                        "email": _this.personage.email,
-                        "textarea": _this.personage.textarea,
-                        "type": _this.commercialType
-                    }
+                if(!_this.emailCheck(_this.email)){
+                    alert("请输入正确得email")
+                    return
+                }
+                if(_this.textarea) postData.remarks=_this.textarea;
+
+
+                postData = {
+                    "name": _this.name,
+                    "telPhone": _this.tel,
+                    "email": _this.email,
+                    "type": _this.commercialType
                 }
 
-                _this.XHR.open("POST", "http://122.115.50.205:8999/account/operativeApi/insertOperative");
+                if (this.commercialType == "e") { //企业商户
+                    console.log("222")
+
+
+                    if(_this.enterprise.enterpriseName) postData.enterpriseName=_this.enterprise.enterpriseName;
+                    if(_this.enterprise.industry) postData.industry=_this.enterprise.industry;
+                    if(_this.enterprise.site) postData.address=_this.enterprise.site;
+                    if(_this.enterprise.enterprisePhone) {
+                        if(!_this.phoneCheck(_this.enterprise.enterprisePhone)){
+                            alert("请输入正确得手机号")
+                            return
+                        }
+                        postData.enterprisePhone=_this.enterprise.enterprisePhone;
+                    }
+                    if(_this.enterprise.capital) {
+                        if(isNaN(_this.enterprise.capital)){
+                            alert("请输入数字")
+                            return
+                        }
+                        postData.registeredCapital=_this.enterprise.capital;
+                    }
+
+                }
+                if (this.commercialType == "g") { //政府商户
+                  console.log("3333")
+                    if(_this.government.governmentName) postData.governmentName=_this.government.governmentName;
+                    if(_this.government.site) postData.address=_this.government.site;
+                }
+
+                _this.XHR.open("POST", "http://59.110.219.138:8769/account/operativeApi/insertOperative");
                 _this.XHR.setRequestHeader("Content-Type", "application/json;charset=UTF-8"); //TODO 可以定义请求头带给后端
-                _this.XHR.send(postData);
+                _this.XHR.send(JSON.stringify(postData));
                 _this.XHR.onreadystatechange = function () {
                     if (_this.XHR.readyState == 4 && _this.XHR.status == 200) {
                         console.log("提交成功")
-                        this.isShowModal = !this.isShowModal;
-                    } else {
-                        console.log("提交失败")
+                        _this.isShowModal = !_this.isShowModal
                     }
                 }
 
