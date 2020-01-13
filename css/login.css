@@ -1,115 +1,114 @@
 .login_body {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background: url('../../imgs/login.png');
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url('../../imgs/login.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
 }
 
 .login_box {
-    width: 376px;
-    height: 462px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 4px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  width: 376px;
+  height: 462px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form-group {
-    margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .form-group input {
-    height: 33px;
-
+  height: 33px;
 }
-.form-control{
-    box-shadow: none!important;
+.form-control {
+  box-shadow: none !important;
 }
 .verification_code {
-    display: inline-block;
-    width: 90px;
-    height: 45px;
-    font-size: 24px;
-    text-align: center;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .verification_switcher {
-    display: inline-block;
-    width: 60px;
-    height: 17px;
-    font-size: 12px;
-    cursor: pointer;
-    color: rgba(102, 102, 102, 1);
-    text-align: right;
+  display: inline-block;
+  width: 60px;
+  height: 17px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgba(102, 102, 102, 1);
+  text-align: right;
 }
 
 .login_box_other {
-    margin-top: 16px;
-    overflow: hidden;
-    color: rgba(13, 76, 154, 1);
+  margin-top: 16px;
+  overflow: hidden;
+  color: rgba(13, 76, 154, 1);
 }
 
 .login_box_other span:first-child {
-    float: left;
-    cursor: pointer;
+  float: left;
+  cursor: pointer;
 }
 
 .login_box_other span:last-child {
-    float: right;
-    cursor: pointer;
+  float: right;
+  cursor: pointer;
 }
 
 .login_footer p {
-    width: 60%;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 5%);
-    text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  text-align: center;
 }
 
 .login_back {
-    position: relative;
-    top: 24px;
-    left: 36px;
+  position: relative;
+  top: 24px;
+  left: 36px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .login_back a {
-    color: rgba(255, 255, 255, 1);
-    font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
 }
 
 @media screen and (max-device-width: 768px) {
-    .login_box {
-        width:311px!important;
-    }
-    .from_box{
-        width: 245px!important;
-    }
-    .code_number{
-        width: 112px!important;
-    }
-    .verification_code{
-        width: 80px!important;
-    }
-    .verification_switcher{
-        width: 45px!important;
-    }
-    .login_footer p {
-        width: 69%!important;
-    }
+  .login_box {
+    width: 311px !important;
+  }
+  .from_box {
+    width: 245px !important;
+  }
+  .code_number {
+    width: 112px !important;
+  }
+  .verification_code {
+    width: 80px !important;
+  }
+  .verification_switcher {
+    width: 45px !important;
+  }
+  .login_footer p {
+    width: 69% !important;
+  }
 }
