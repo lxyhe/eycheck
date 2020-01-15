@@ -1,306 +1,301 @@
 .login_box {
-    width: 936px;
-    height: 754px;
+  width: 936px;
+  height: 754px;
 }
 
 .account_titie {
-    /* overflow: hidden; */
-    height: 64px;
-    /* line-height: 64px; */
-    background: rgba(230, 237, 244, 1);
+  /* overflow: hidden; */
+  height: 64px;
+  /* line-height: 64px; */
+  background: rgba(230, 237, 244, 1);
 }
 
-.account_titie>span {
-    float: left;
+.account_titie > span {
+  float: left;
 
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(0, 2, 29, 1);
-    margin-left: 32px;
-    margin-top: 20px;
-}
-
-.account_select {
-    float: right;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 2, 29, 1);
+  margin-left: 32px;
+  margin-top: 20px;
 }
 
 .account_select {
-    width: 105px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid rgba(13, 76, 154, 1);
-    margin-right: 32px;
-    margin-top: 17px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
+  float: right;
+}
 
+.account_select {
+  width: 105px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid rgba(13, 76, 154, 1);
+  margin-right: 32px;
+  margin-top: 17px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
 }
 
 .account_select_arrows {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid rgba(13, 76, 154, 1);
-    ;
-    position: relative;
-    top: -4px;
-    left: 2px;
-    color: rgba(13, 76, 154, 1);
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(13, 76, 154, 1);
+  position: relative;
+  top: -4px;
+  left: 2px;
+  color: rgba(13, 76, 154, 1);
 }
 
 .account_select_list {
-    width: 104px;
-    height: 119px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    top: 30px;
-    left: 0;
-    z-index: 10;
-
+  width: 104px;
+  height: 119px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  top: 30px;
+  left: 0;
+  z-index: 10;
 }
 
 textarea {
-    padding: 8px;
+  padding: 8px;
 }
 
 .account_select_list li {
-    height: 40px;
-    line-height: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .account_select_list li:hover {
-    background: #eee
+  background: #eee;
 }
 
 .account_body {
-    margin-left: 32px;
+  margin-left: 32px;
 }
 
 .control-label {
-    font-family: PingFang-SC-Regular, PingFang-SC;
-    font-weight: 400;
+  font-family: PingFang-SC-Regular, PingFang-SC;
+  font-weight: 400;
 }
 
 .account_body p:first-child {
-    width: 64px;
-    height: 22px;
-    font-size: 16px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-family: PingFang-SC-Medium, PingFang-SC;
-    font-weight: 500;
+  width: 64px;
+  height: 22px;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: PingFang-SC-Medium, PingFang-SC;
+  font-weight: 500;
 }
 
 .company {
-    width: 64px;
-    height: 22px;
-    font-size: 16px;
-    margin-top: 20px;
+  width: 64px;
+  height: 22px;
+  font-size: 16px;
+  margin-top: 20px;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .control-label {
-    min-width: 87px;
-    text-align: left !important;
-    font-size: 14px;
+  min-width: 87px;
+  text-align: left !important;
+  font-size: 14px;
 }
 
 .account_body input {
-    display: inline-block;
-    width: 324px;
-    height: 32px;
-    border-radius: 4px;
-    border: 1px solid rgba(232, 232, 232, 1);
-    box-shadow: none
+  display: inline-block;
+  width: 324px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(232, 232, 232, 1);
+  box-shadow: none;
 }
 
 .remark {
-    width: 64px;
-    height: 22px;
-    font-size: 16px;
-    margin-top: 54px;
-    margin-bottom: 24px;
+  width: 64px;
+  height: 22px;
+  font-size: 16px;
+  margin-top: 54px;
+  margin-bottom: 24px;
 }
 
 .account_footer {
-    width: 100%;
-    height: 84px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px -1px 0px 0px rgba(238, 238, 238, 1);
-    position: absolute;
-    bottom: 0;
-    text-align: right;
+  width: 100%;
+  height: 84px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px -1px 0px 0px rgba(238, 238, 238, 1);
+  position: absolute;
+  bottom: 0;
+  text-align: right;
 }
 
 .account_footer div {
-    float: right;
-    margin-top: 20px;
-    width: 136px;
-    height: 44px;
-    line-height: 44px;
-    background: rgba(13, 76, 154, 1);
-    border-radius: 2px;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    margin-right: 32px;
-    cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  width: 136px;
+  height: 44px;
+  line-height: 44px;
+  background: rgba(13, 76, 154, 1);
+  border-radius: 2px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-right: 32px;
+  cursor: pointer;
 }
 
 .form-group {
-    margin-bottom: 26px !important;
+  margin-bottom: 26px !important;
 }
 
 .company_pos {
-    margin-top: 18px !important;
-    margin-bottom: 10px !important;
+  margin-top: 18px !important;
+  margin-bottom: 10px !important;
 }
 
 .unit {
-    position: absolute;
-    right: 40px;
-    top: 7px;
-    display: inline-block;
-    width: 14px;
-    height: 20px;
-    font-size: 14px;
-    color: rgba(153, 153, 153, 1);
-    line-height: 20px;
+  position: absolute;
+  right: 40px;
+  top: 7px;
+  display: inline-block;
+  width: 14px;
+  height: 20px;
+  font-size: 14px;
+  color: rgba(153, 153, 153, 1);
+  line-height: 20px;
 }
 
 .account_suss {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .account_suss_box {
-    width: 376px;
-    height: 401px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  width: 376px;
+  height: 401px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .account_suss_box img {
-    margin-top: 48px;
-    margin-bottom: 17px;
+  margin-top: 48px;
+  margin-bottom: 17px;
 }
 
 .account_suss_box p {
-    font-size: 20px;
-    /* margin-top: 48px; */
-    margin-bottom: 32px;
-    color: rgba(13, 76, 154, 1);
-
+  font-size: 20px;
+  /* margin-top: 48px; */
+  margin-bottom: 32px;
+  color: rgba(13, 76, 154, 1);
 }
 
 .audit {
-    width: 312px;
-    height: 78px;
-    font-size: 16px;
-    color: rgba(102, 102, 102, 1);
-    line-height: 26px;
-    margin: 0 auto;
-    margin-bottom: 55px;
+  width: 312px;
+  height: 78px;
+  font-size: 16px;
+  color: rgba(102, 102, 102, 1);
+  line-height: 26px;
+  margin: 0 auto;
+  margin-bottom: 55px;
 }
 
 .back_index {
-    width: 312px;
-    height: 48px;
-    line-height: 48px;
-    background: rgba(13, 76, 154, 1);
-    color: #fff;
-    font-size: 16px;
-    margin: 0 auto;
-    cursor: pointer;
+  width: 312px;
+  height: 48px;
+  line-height: 48px;
+  background: rgba(13, 76, 154, 1);
+  color: #fff;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .form-group {
-    margin-right: 15px !important;
+  margin-right: 15px !important;
 }
 
 @media screen and (max-device-width: 768px) {
-    .control-label {
-        min-width: 61px;
-    }
+  .control-label {
+    min-width: 61px;
+  }
 
-    .login_box {
-        height: 62% !important;
-        min-height: 60% !important;
+  .login_box {
+    height: 62% !important;
+    min-height: 60% !important;
 
-        max-height: 80% !important;
-        width: 90% !important;
-        overflow-y: scroll;
-    }
+    max-height: 80% !important;
+    width: 90% !important;
+    overflow-y: scroll;
+  }
 
-    .account_body input {
+  .account_body input {
+    box-shadow: none;
+  }
 
-        box-shadow: none
-    }
+  textarea {
+    width: 90% !important;
+    height: auto !important;
+  }
 
-    textarea {
-        width: 90% !important;
-        height: auto !important;
-    }
+  .account_footer {
+    position: static;
+  }
 
-    .account_footer {
-        position: static;
-    }
+  .control-label {
+    width: 20%;
+  }
 
-    .control-label {
-        width: 20%;
-    }
+  .form-control {
+    width: 70% !important;
+  }
 
-    .form-control {
-        width: 70% !important;
-    }
+  .remark {
+    margin-top: 5% !important;
+    margin-bottom: 3% !important;
+  }
 
-    .remark {
-        margin-top: 5% !important;
-        margin-bottom: 3% !important;
-    }
+  .account_body p:first-child {
+    margin-top: 5% !important;
+    margin-bottom: 3% !important;
+  }
 
-    .account_body p:first-child {
-        margin-top: 5% !important;
-        margin-bottom: 3% !important;
-    }
+  .account_footer {
+    text-align: center;
+  }
 
-    .account_footer {
-        text-align: center;
-    }
+  .account_footer div {
+    width: 80%;
+  }
 
-    .account_footer div {
-        width: 80%;
-    }
+  .account_suss_box {
+    width: 80%;
+  }
 
-    .account_suss_box {
-        width: 80%;
-    }
+  .audit {
+    width: 90%;
+  }
 
-    .audit {
-        width: 90%;
-    }
-
-    .back_index {
-        width: 90%;
-    }
+  .back_index {
+    width: 90%;
+  }
 }

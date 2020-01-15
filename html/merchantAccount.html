@@ -42,7 +42,7 @@
                
                 <!-- 个人商户 -->
                 <div class="account_body" v-if="commercialID==1">
-                    <p>联系方式</p>
+                    <p style="font-weight: 500;">联系方式</p>
                     <form class="form-horizontal" role="form">
                         <div style="overflow: hidden;">
                             <div class="form-group  col-sm-6">
@@ -72,7 +72,7 @@
                         </div>
 
                     </form>
-                    <p class="remark">备注内容</p>
+                    <p class="remark" style="font-weight: 500;">备注内容</p>
                     <div>
                         <textarea placeholder="如有需要，请填写备注内容"   v-model="textarea" name="reworkmes" cols="40" rows="4" style="width:872px;
                         height:130px;
@@ -84,7 +84,7 @@
   
                 <!-- 企业商户 -->
                 <div class="account_body" v-if="commercialID==2">
-                    <p class="company_pos">联系方式</p>
+                    <p class="company_pos" style="font-weight: 500;">联系方式</p>
                     <form class="form-horizontal" role="form">
                         <div style="overflow: hidden;">
                             <div class="form-group  col-sm-6">
@@ -113,7 +113,7 @@
                         </div>
 
                     </form>
-                    <p class="company company_pos">企业信息</p>
+                    <p class="company company_pos" style="font-weight: 500;">企业信息</p>
                     <form class="form-horizontal" role="form">
                         <div style="overflow: hidden;">
                             <div class="form-group  col-sm-6">
@@ -161,7 +161,7 @@
 
                         </div>
                     </form>
-                    <p class="remark company_pos">备注内容</p>
+                    <p class="remark company_pos" style="font-weight: 500;">备注内容</p>
                     <div>
                         <textarea placeholder="如有需要，请填写备注内容"  v-model="textarea" name="reworkmes" cols="40" rows="4" style="width:872px;
                                 height:130px;
@@ -172,7 +172,7 @@
                
                 <!-- 政府商户 -->
                 <div class="account_body" v-if="commercialID==3">
-                    <p>联系方式</p>
+                    <p style="font-weight: 500;">联系方式</p>
                     <form class="form-horizontal" role="form">
                         <div style="overflow: hidden;">
                             <div class="form-group  col-sm-6">
@@ -201,7 +201,7 @@
                         </div>
 
                     </form>
-                    <p class="company company_pos">政府信息</p>
+                    <p class="company company_pos" style="font-weight: 500;">政府信息</p>
                     <form class="form-horizontal" role="form">
                         <div style="overflow: hidden;">
                             <div class="form-group  col-sm-6">
@@ -221,7 +221,7 @@
                         </div>
 
                     </form>
-                    <p class="remark">备注内容</p>
+                    <p class="remark" style="font-weight: 500;">备注内容</p>
                     <div>
                         <textarea placeholder="如有需要，请填写备注内容" v-model="government.textarea" name="reworkmes" cols="40" rows="4" style="width:872px;
                             height:130px;
